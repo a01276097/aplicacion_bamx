@@ -140,8 +140,7 @@
                         android:id="@+id/fruta_verdura_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" kg"
-                        app:layout_asignSelf="center"/>
+                        android:text=" kg"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -164,8 +163,7 @@
                         android:id="@+id/pan_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" kg"
-                        app:layout_asignSelf="center"/>
+                        android:text=" kg"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -188,8 +186,7 @@
                         android:id="@+id/abarrote_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" kg"
-                        app:layout_asignSelf="center"/>
+                        android:text=" kg"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -212,8 +209,7 @@
                         android:id="@+id/no_comestible3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" kg"
-                        app:layout_asignSelf="center"/>
+                        android:text=" kg"/>
                 </LinearLayout>
 
             </LinearLayout>
