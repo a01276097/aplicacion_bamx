@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aplicacion_bamx">
         <activity
+            android:name=".Activity_operador_dia_consulta"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_operador_entrega_consulta"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_receptor_recepcion_consulta"
+            android:exported="true" />
+        <activity
             android:name=".Activity_operador_recoleccion_consulta"
             android:exported="true" />
         <activity
