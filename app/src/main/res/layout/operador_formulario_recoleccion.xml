@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:id="@+id/titulos_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar recolección"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/titulos_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#ubicación"
+                app:layout_alignSelf="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <TextView
+                    android:id="@+id/rubro_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Recibió formato de registro del donante?"
+                    app:layout_alignSelf="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/boton_si_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        app:layout_alignSelf="center"/>
+
+                    <RadioButton
+                        android:id="@+id/boton_no_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        app:layout_alignSelf="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rubro_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No. de folio"
+                    app:layout_alignSelf="center"/>
+                <EditText
+                    android:id="@+id/entrada_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese el No. de folio"
+                    app:layout_alignSelf="center"/>
+
+                <TextView
+                    android:id="@+id/rubro_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Responsable de tienda (entrega)"
+                    app:layout_alignSelf="center"/>
+                <EditText
+                    android:id="@+id/entrada_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del responsable"
+                    app:layout_alignSelf="center" />
+
+                <TextView
+                    android:id="@+id/subtema_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categorías contenidas en la donación"
+                    app:layout_alignSelf="center"
+                    />
+
+                <TextView
+                    android:id="@+id/rubro_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abarrote"
+                    app:layout_alignSelf="center"/>
+                <EditText
+                    android:id="@+id/entrada_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad en Kg"
+                    app:layout_alignSelf="center" />
+
+                <TextView
+                    android:id="@+id/rubro_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fruta y Verdura"
+                    app:layout_alignSelf="center"/>
+                <EditText
+                    android:id="@+id/entrada_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad en Kg"
+                    app:layout_alignSelf="center" />
+
+                <TextView
+                    android:id="@+id/rubro_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pan"
+                    app:layout_alignSelf="center"/>
+                <EditText
+                    android:id="@+id/entrada_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad en Kg"
+                    app:layout_alignSelf="center" />
+
+                <TextView
+                    android:id="@+id/rubro_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No comestible"
+                    app:layout_alignSelf="center"/>
+                <EditText
+                    android:id="@+id/entrada_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad en Kg"
+                    app:layout_alignSelf="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/boton_entrega_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        app:layout_alignSelf="center"/>
+</LinearLayout>

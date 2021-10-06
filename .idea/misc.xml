@@ -4,10 +4,39 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/general_hoja.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/general_log_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/general_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/general_plantilla_formulario.xml" value="0.264" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/general_plantilla_hoja.xml" value="0.264" />
         <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/log_in.xml" value="0.264" />
         <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/login.xml" value="0.2" />
         <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/nota_confirmacion.xml" value="0.264" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_consulta_dia.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_consulta_entrega.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_consulta_recoleccion.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_consulta_registrodeldia.xml" value="0.4" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_formulario_recoleccion.xml" value="0.264" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_nota_confirmacion.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_nota_recolección.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_plantillaConsulta.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_plantilla_consulta.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_recoleccion.xml" value="0.264" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/operador_registro.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/plantilla_consulta.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/plantilla_formulario.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/plantilla_hoja.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/prueba.xml" value="0.264" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/receptor_consulta_recepcion.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/receptor_formulario_recepcion.xml" value="0.264" />
         <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/recolecion_terminada.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/operador_card_consulta_entrega.xml" value="0.3625" />
+        <entry key="app/src/main/res/layout/operador_card_consulta_recoleccion.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/operador_consulta_entrega.xml" value="0.3625" />
+        <entry key="app/src/main/res/layout/operador_consulta_recoleccion.xml" value="0.3625" />
+        <entry key="app/src/main/res/layout/operador_nota_recolección.xml" value="0.3625" />
+        <entry key="app/src/main/res/layout/operador_recoleccion_consulta.xml" value="0.3625" />
+        <entry key="app/src/main/res/layout/plantilla_card_1.xml" value="0.3625" />
       </map>
     </option>
   </component>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:id="@+id/titulos_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirmar recepción de donativo"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/titulos_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#CARD_DE_OPERADOR!!!!"
+                app:layout_alignSelf="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/fruta_verdura_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fruta y verdura: "
+                    app:layout_alignSelf="center"/>
+                <TextView
+                    android:id="@+id/fruta_verdura_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#numero_kilos"
+                    app:layout_alignSelf="center"/>
+                <TextView
+                    android:id="@+id/fruta_verdura_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" kg"
+                    app:layout_asignSelf="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/pan_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pan: "
+                    app:layout_alignSelf="center"/>
+                <TextView
+                    android:id="@+id/pan_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#numero_kilos"
+                    app:layout_alignSelf="center"/>
+                <TextView
+                    android:id="@+id/pan_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" kg"
+                    app:layout_asignSelf="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/abarrote_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abarrote: "
+                    app:layout_alignSelf="center"/>
+                <TextView
+                    android:id="@+id/abarrote_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#numero_kilos"
+                    app:layout_alignSelf="center"/>
+                <TextView
+                    android:id="@+id/abarrote_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" kg"
+                    app:layout_asignSelf="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/no_comestible_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No comestible: "
+                    app:layout_alignSelf="center"/>
+                <TextView
+                    android:id="@+id/no_comestible2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#numero_kilos"
+                    app:layout_alignSelf="center"/>
+                <TextView
+                    android:id="@+id/no_comestible3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" kg"
+                    app:layout_asignSelf="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/boton_entrega_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        app:layout_alignSelf="center"/>
+    <Button
+        android:id="@+id/boton_entrega_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        app:layout_alignSelf="center"/>
+</LinearLayout>
