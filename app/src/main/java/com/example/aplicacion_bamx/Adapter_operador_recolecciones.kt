@@ -32,7 +32,7 @@ class Adapter_operador_recolecciones(val context: Context, val layout: Int, val 
         val donador_direccion = view.findViewById(R.id.donador_direccion_textview) as TextView
 
         //Extraer un elemento del dataSource
-        val elemento = getItem(position) as Recoleccioncd
+        val elemento = getItem(position) as Recoleccion
 
         donador_nombre.text = elemento.donador_nombre
         donador_direccion.text = elemento.donador_direccion
