@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginBottom="20dp"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/donador_nombre_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#tienda" />
+
+        <TextView
+            android:id="@+id/donador_direccion_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#direccionCompleta" />
+
+    </LinearLayout>
+</LinearLayout>

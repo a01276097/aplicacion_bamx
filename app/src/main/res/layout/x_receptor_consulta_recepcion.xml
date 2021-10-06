@@ -26,10 +26,10 @@
                 app:layout_alignSelf="center" />
 
             <TextView
-                android:id="@+id/bienvenida_operador_nombre"
+                android:id="@+id/bienvenida_receptor_nombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#operadorX"
+                android:text="#receptor_nombre"
                 app:layout_alignSelf="center" />
 
         </LinearLayout>
@@ -40,18 +40,10 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/tipo_pantalla_1"
-                android:layout_width="wrap_content"
+                android:id="@+id/tipo_pantalla"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Consultar ruta de recolección"
-                app:layout_alignSelf="center"
-                />
-
-            <TextView
-                android:id="@+id/fecha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="#fecha"
+                android:text="Operadores en ruta de entrega"
                 app:layout_alignSelf="center"
                 />
 
@@ -62,19 +54,19 @@
 
                 <TextView
                     android:id="@+id/indicaciones"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Se espera recolección en:"
+                    android:text="Espere entrega de:"
                     app:layout_alignSelf="center"
                     />
 
                 <ListView
-                    android:id="@+id/lista_recolecciones"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+
+                    />
 
             </LinearLayout>
-
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

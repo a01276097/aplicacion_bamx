@@ -26,7 +26,7 @@
                 app:layout_alignSelf="center" />
 
             <TextView
-                android:id="@+id/bienvenida_2"
+                android:id="@+id/bienvenida_operador_nombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#operadorX"
@@ -41,17 +41,17 @@
 
             <TextView
                 android:id="@+id/tipo_pantalla_1"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Consultar recolecciones realizadas"
                 app:layout_alignSelf="center"
                 />
 
             <TextView
-                android:id="@+id/borrame_1"
+                android:id="@+id/fecha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="#fecha"
                 app:layout_alignSelf="center"
                 />
 
@@ -61,28 +61,20 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/orden_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Recolecciones del día"
-                    app:layout_alignSelf="center"
-                    />
-
-                <TextView
-                    android:id="@+id/borrame_2"
+                    android:id="@+id/indicaciones"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Recolecciones del dia:"
                     app:layout_alignSelf="center"
                     />
 
                 <ListView
+                    android:id="@+id/lista_recolecciones"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    />
+                    android:layout_height="wrap_content"/>
 
             </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
