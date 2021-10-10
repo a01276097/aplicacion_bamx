@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:layout_marginLeft="40dp"
     android:layout_marginTop="20dp"
     android:layout_marginRight="40dp"
     android:layout_marginBottom="20dp"
+    android:background="@drawable/border_card"
+    android:orientation="vertical"
     android:padding="15dp">
 
 
@@ -21,13 +22,19 @@
             android:id="@+id/donador_nombre_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="#tienda" />
+            android:fontFamily="@font/bebasneue"
+            android:text="#tienda"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/donador_direccion_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="#direccionCompleta" />
+            android:fontFamily="@font/manroperegular"
+            android:text="#direccionCompleta"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
     </LinearLayout>
 </LinearLayout>

@@ -4,30 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:layout_marginLeft="40dp"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="10dp"
     android:layout_marginRight="40dp"
-    android:layout_marginBottom="20dp"
+    android:background="@drawable/border_card"
+    android:orientation="vertical"
     android:padding="15dp">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/bodega_nombre_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="#ubicacion" />
+            android:fontFamily="@font/bebasneue"
+            android:text="#ubicacion"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/bodega_direccion_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="#direccionCompleta" />
+            android:fontFamily="@font/manropebold"
+            android:text="#direccionCompleta"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -40,13 +46,17 @@
             android:id="@+id/fruta_verdura_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fruta y verdura(kg): " />
+            android:fontFamily="@font/manropebold"
+            android:text="Fruta y verdura(kg): "
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/fruta_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#cantidad" />
+            android:fontFamily="@font/manroperegular"
+            android:text="#cantidad"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -59,13 +69,17 @@
             android:id="@+id/pan_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pan(kg): " />
+            android:fontFamily="@font/manropebold"
+            android:text="Pan(kg): "
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/pan_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#cantidad" />
+            android:fontFamily="@font/manroperegular"
+            android:text="#cantidad"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -78,13 +92,17 @@
             android:id="@+id/abarrote_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Abarrote(kg): " />
+            android:fontFamily="@font/manropebold"
+            android:text="Abarrote(kg): "
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/abarrote_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#cantidad" />
+            android:fontFamily="@font/manroperegular"
+            android:text="#cantidad"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -97,13 +115,17 @@
             android:id="@+id/no_comestible_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No comestible(kg): " />
+            android:fontFamily="@font/manropebold"
+            android:text="No comestible(kg): "
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/no_comestible_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#cantidad" />
+            android:fontFamily="@font/manroperegular"
+            android:text="#cantidad"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
