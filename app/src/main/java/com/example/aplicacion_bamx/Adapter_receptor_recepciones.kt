@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import com.example.aplicacion_bamx.R
 import com.example.aplicacion_bamx.model.Recepcion
 
 class Adapter_receptor_recepciones(val context: Context, val layout: Int, val dataSource : List<Recepcion>) : BaseAdapter() {
