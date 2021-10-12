@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:title="Consultar ruta de recoleccion"
+       android:id="@+id/boton_consultar_recoleccion"
+       android:icon="@drawable/ic_camion"/>
+   <item android:title="Consultar ruta de entrega"
+       android:id="@+id/boton_consultar_entrega"
+       android:icon="@drawable/ic_bodega"/>
+   <item android:title="Consultar recolecciones realizadas"
+       android:id="@+id/boton_consultar_realizadas"
+       android:icon="@drawable/ic_caja"/>
+   <item android:title="Cerrar Sesion"
+       android:id="@+id/boton_cerrar_sesion"
+       android:icon="@drawable/ic_cerrar_sesion"/>
+</menu>
