@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aplicacion_bamx">
         <activity
-            android:name=".Activity_operador_mensaje_emergente"
-            android:exported="true" />
-        <activity
             android:name=".Activity_receptor_recepcion_formulario"
             android:exported="true" />
         <activity
