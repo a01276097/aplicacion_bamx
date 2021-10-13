@@ -3,12 +3,15 @@ package com.example.aplicacion_bamx
 import android.os.Bundle
 import android.util.Log
 import android.widget.ListView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.example.aplicacion_bamx.model.Recoleccion
 import org.json.JSONException
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class Activity_operador_recoleccion_consulta : AppCompatActivity() {
@@ -16,8 +19,18 @@ class Activity_operador_recoleccion_consulta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.operador_recoleccion_consulta)
 
+        val myTimeZone = TimeZone.getTimeZone("America/Mexico_City")
+        val local = Locale("es","MX")
+        val simpleDateFormat = SimpleDateFormat("EEEE dd 'de' MMMM", local)
+        simpleDateFormat.setTimeZone(myTimeZone)
+        val currentDateAndTime: String = simpleDateFormat.format(Date())
 
-        val url = "https://reqres.in/api/users?page=2"
+        val txtFecha = findViewById<TextView>(R.id.fecha)
+        txtFecha.text=currentDateAndTime
+
+
+
+
         val url1 = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/driver?thisDriver=7"
         val recolecciones = mutableListOf<Recoleccion>()
         val requestQueue = Volley.newRequestQueue(this)
@@ -29,10 +42,6 @@ class Activity_operador_recoleccion_consulta : AppCompatActivity() {
                     val jsonArray = response.getJSONArray("data")
                     for (i in 0 until jsonArray.length()) {
                         val jsonObject = jsonArray.getJSONObject(i)
-                        Log.e("Hola", jsonObject.toString())
-//                        val id = jsonObject.getInt("id")
-//                        val first_name = jsonObject.getString("first_name")
-//                        val email = jsonObject.getString("email")
                         val idDonor = jsonObject.getInt("idDonor")
                         val nombre = jsonObject.getString("nombre")
                         val callen = jsonObject.getString("calle")
@@ -43,24 +52,21 @@ class Activity_operador_recoleccion_consulta : AppCompatActivity() {
                         val estado = jsonObject.getString("estado")
                         val direccion = callen + ", " + numExterior + ", " + colonia + ", " + municipio + ", " + estado + ", " + cp
                         recolecciones.add(i, Recoleccion(idDonor, nombre, direccion))
+
+                        val lstRecolecciones = findViewById<ListView>(R.id.lista_recolecciones)
+
+                        val adaptador = Adapter_operador_recolecciones(this@Activity_operador_recoleccion_consulta, R.layout.operador_card_consulta_recoleccion, recolecciones)
+
+                        lstRecolecciones.adapter = adaptador
                     }
                 } catch (e: JSONException) {
                     e.printStackTrace()
-                    Log.e("Hola", e.toString())
 
                 }
             })
         { error -> error.printStackTrace() }
 
         requestQueue.add(jsonObjectRequest)
-
-
-
-        val lstRecolecciones = findViewById<ListView>(R.id.lista_recolecciones)
-
-        val adaptador = Adapter_operador_recolecciones(this@Activity_operador_recoleccion_consulta, R.layout.operador_card_consulta_recoleccion, recolecciones)
-
-        lstRecolecciones.adapter = adaptador
 
         //pasar datos a la siguiente pantalla
 //        lstRecolecciones.setOnItemClickListener{parent, view, position, id ->
