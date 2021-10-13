@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import com.example.aplicacion_bamx.R
 import com.example.aplicacion_bamx.model.Dia
 
 class Adapter_operador_dia(val context: Context, val layout: Int, val dataSource : List<Dia>) : BaseAdapter() {
