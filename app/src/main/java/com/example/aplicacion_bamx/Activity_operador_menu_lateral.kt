@@ -22,6 +22,13 @@ class Activity_operador_menu_lateral : AppCompatActivity() {
         val navigationView = findViewById<NavigationView>(R.id.navigationView)
         val fragmentManager = supportFragmentManager
 
+
+        // Fragment inicial del operador
+        val ft = fragmentManager.beginTransaction()
+        ft.replace(R.id.contenedor, Fragment_operador_recoleccion_consulta())
+        ft.commit()
+        drawer_layout.closeDrawer(GravityCompat.START)
+
         image_menu.setOnClickListener {
             drawer_layout.openDrawer(GravityCompat.START)
         }

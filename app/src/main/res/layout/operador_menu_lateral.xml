@@ -27,7 +27,10 @@
         android:layout_height="match_parent"
         android:id="@+id/contenedor"
         android:layout_marginTop="?actionBarSize"
-        android:orientation="vertical"/>
+        android:orientation="vertical">
+
+    </LinearLayout>
+
 
     <!-- Área dinámica, fragment -->
     <!-- NavigationView, <- Menú lateral -->
