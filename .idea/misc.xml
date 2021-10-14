@@ -48,6 +48,14 @@
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/x_receptor_consulta_recepcion.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/xml/network_config.xml" value="0.21145833333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.2564814814814815" />
+        <entry key="app/src/main/res/drawable/ic_recolecciones_realizadas.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/drawable/ic_ruta_entrega.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/drawable/red_gradient_bg.xml" value="0.28177083333333336" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.40625" />
+        <entry key="app/src/main/res/layout/drawer_header.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.14375" />
+        <entry key="app/src/main/res/layout/fragment_receptor_recepcion_consulta.xml" value="0.14322916666666666" />
         <entry key="app/src/main/res/layout/general_login.xml" value="0.3625" />
         <entry key="app/src/main/res/layout/operador_card_consulta_entrega.xml" value="0.3625" />
         <entry key="app/src/main/res/layout/operador_card_consulta_recoleccion.xml" value="0.5" />
