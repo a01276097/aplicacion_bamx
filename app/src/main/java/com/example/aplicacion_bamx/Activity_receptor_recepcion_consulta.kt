@@ -10,7 +10,8 @@ class Activity_receptor_recepcion_consulta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.receptor_recepcion_consulta)
 
-        val lstRecepciones = findViewById<ListView>(R.id.lista_recolecciones)
+        //val view= inflater.inflate(R.layout.receptor...)
+        val lstRecepciones = /*view.*/findViewById<ListView>(R.id.lista_recolecciones)
         val datos = listOf( Recepcion("nombre1","id_1","un_1", 1, 1, 1, 1),
             Recepcion("nombre2","id_2","un_2", 2, 2, 2, 2),
             Recepcion("nombre3","id_3","un_3", 3, 3, 3, 3),

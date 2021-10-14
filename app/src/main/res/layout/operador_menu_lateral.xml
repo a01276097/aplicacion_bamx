@@ -20,6 +20,13 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contenedor"
+        android:layout_marginTop="?actionBarSize"
+        android:orientation="vertical"/>
+
     <!-- Área dinámica, fragment -->
     <!-- NavigationView, <- Menú lateral -->
     <com.google.android.material.navigation.NavigationView
