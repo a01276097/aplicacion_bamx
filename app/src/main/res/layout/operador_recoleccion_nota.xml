@@ -4,221 +4,173 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/red_gradient_bg"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        android:layout_marginTop="100dp"
         android:orientation="vertical"
         android:paddingLeft="50dp"
         android:paddingRight="50dp">
 
+        <TextView
+            android:id="@+id/titulos_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebasneue"
+            android:gravity="center"
+            android:text="Nota de recolección realizada"
+            android:textColor="@color/white"
+            android:textColorLink="@color/verde"
+            android:textSize="34sp"
+            app:layout_alignSelf="center" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_card"
             android:orientation="vertical"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
+            android:padding="20dp"
+            android:visibility="gone">
 
             <TextView
-                android:id="@+id/titulos_1"
+                android:id="@+id/linea_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NOTA DE ENTREGA CAPTURADA CON EXITO"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:phoneNumber="false"
+                android:text="En caso de errores, diríjase con el administrador del sistema."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/linea_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/manropebold"
+                android:gravity="center"
+                android:text="No recibio nota del establecimiento donador"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtFolioNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="Folio "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtFechaNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="#fecha"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtResponsableNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="Recibió de "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtDonadorNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/manropebold"
+                android:gravity="center"
+                android:text="#donador"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtNoComestibleNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="No comestible: "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtPanNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="Pan: "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtFrutaVerduraNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="Fruta y verdura: "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtAbarroteNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="Abarrote: "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <Button
+                android:id="@+id/boton_continuar_nota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebasneue"
+                android:text="Continuar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="34sp"
+                app:cornerRadius="25dp"
                 app:layout_alignSelf="center" />
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp">
-
-                <TextView
-                    android:id="@+id/linea_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="En caso de errores, diríjase con el administrador del sistema."
-                    app:layout_alignSelf="center"/>
-
-                <TextView
-                    android:id="@+id/linea_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="No recibio nota del establecimiento donador"
-                    app:layout_alignSelf="center"/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/linea_3_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Folio "
-                        app:layout_alignSelf="center"/>
-                    <TextView
-                        android:id="@+id/linea_3_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#folio"
-                        app:layout_alignSelf="center"/>
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/fecha"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="#fecha"
-                    app:layout_alignSelf="center"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/receptor_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Recibió de "
-                        app:layout_alignSelf="center"/>
-
-                    <TextView
-                        android:id="@+id/receptor_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#receptor"
-                        app:layout_alignSelf="center"/>
-
-                    <TextView
-                        android:id="@+id/receptor_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" en"
-                        app:layout_alignSelf="center"/>
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tienda"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="#donador"
-                    app:layout_alignSelf="center"/>
-
-                <TextView
-                    android:id="@+id/direccion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="#direccion"
-                    app:layout_alignSelf="center"/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/fruta_verdura_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fruta y verdura: "
-                        app:layout_alignSelf="center"/>
-                    <TextView
-                        android:id="@+id/fruta_verdura_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#numero_kilos"
-                        app:layout_alignSelf="center"/>
-                    <TextView
-                        android:id="@+id/fruta_verdura_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" kg"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/pan_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Pan: "
-                        app:layout_alignSelf="center"/>
-                    <TextView
-                        android:id="@+id/pan_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#numero_kilos"
-                        app:layout_alignSelf="center"/>
-                    <TextView
-                        android:id="@+id/pan_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" kg"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/abarrote_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Abarrote: "
-                        app:layout_alignSelf="center"/>
-                    <TextView
-                        android:id="@+id/abarrote_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#numero_kilos"
-                        app:layout_alignSelf="center"/>
-                    <TextView
-                        android:id="@+id/abarrote_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" kg"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/no_comestible_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No comestible: "
-                        app:layout_alignSelf="center"/>
-                    <TextView
-                        android:id="@+id/no_comestible2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#numero_kilos"
-                        app:layout_alignSelf="center"/>
-                    <TextView
-                        android:id="@+id/no_comestible3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" kg"/>
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
-    <Button
-        android:id="@+id/boton_entrega_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Continuar"
-        app:layout_alignSelf="center"/>
 </LinearLayout>

@@ -52,7 +52,7 @@
         </LinearLayout>
     </LinearLayout>
     <Button
-        android:id="@+id/boton_entrega_1"
+        android:id="@+id/boton_continuar_nota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#texto_entrega"
