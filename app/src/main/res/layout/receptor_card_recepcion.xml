@@ -88,7 +88,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/fruta_verdura_1"
+                    android:id="@+id/txtFrutaVerduraNota"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Fruta y verdura(kg): " />
@@ -107,7 +107,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/pan_1"
+                    android:id="@+id/txtPanNota"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pan(kg): " />
@@ -126,7 +126,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/abarrote_1"
+                    android:id="@+id/txtAbarroteNota"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Abarrote(kg): " />
@@ -145,7 +145,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/no_comestible_1"
+                    android:id="@+id/txtNoComestibleNota"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No comestible(kg): " />

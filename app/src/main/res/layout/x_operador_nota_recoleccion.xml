@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/linea_3_1"
+                        android:id="@+id/txtFolioNota"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Folio "
@@ -74,7 +74,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/fecha"
+                    android:id="@+id/txtFechaNota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="#fecha"
@@ -85,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/receptor_1"
+                        android:id="@+id/txtResponsableNota"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Recibió de "
@@ -107,7 +107,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tienda"
+                    android:id="@+id/txtDonadorNota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="#donador"
@@ -125,7 +125,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/fruta_verdura_1"
+                        android:id="@+id/txtFrutaVerduraNota"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Fruta y verdura: "
@@ -148,7 +148,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/pan_1"
+                        android:id="@+id/txtPanNota"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pan: "
@@ -171,7 +171,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/abarrote_1"
+                        android:id="@+id/txtAbarroteNota"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Abarrote: "
@@ -194,7 +194,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/no_comestible_1"
+                        android:id="@+id/txtNoComestibleNota"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No comestible: "
@@ -216,7 +216,7 @@
         </LinearLayout>
     </LinearLayout>
     <Button
-        android:id="@+id/boton_entrega_1"
+        android:id="@+id/boton_continuar_nota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Continuar"

@@ -49,7 +49,7 @@
                 android:paddingRight="50dp">
 
                 <TextView
-                    android:id="@+id/rubro_1"
+                    android:id="@+id/txtFormatoRegistro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="#rubro_formulario"
@@ -76,13 +76,13 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/rubro_2"
+                    android:id="@+id/txtFolio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="#rubro_formulario"
                     app:layout_alignSelf="center"/>
                 <EditText
-                    android:id="@+id/entrada_2"
+                    android:id="@+id/edtFolio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="#placeholder_respuesta"
@@ -92,7 +92,7 @@
         </LinearLayout>
     </LinearLayout>
     <Button
-        android:id="@+id/boton_entrega_1"
+        android:id="@+id/boton_continuar_nota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#texto_entrega"
