@@ -1,5 +1,7 @@
 package com.example.aplicacion_bamx
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -22,6 +24,8 @@ class Activity_operador_menu_lateral : AppCompatActivity() {
         val navigationView = findViewById<NavigationView>(R.id.navigationView)
         val fragmentManager = supportFragmentManager
 
+        val sharedPreferences = getSharedPreferences("login",
+            Context.MODE_PRIVATE)
 
         // Fragment inicial del operador
         val ft = fragmentManager.beginTransaction()
@@ -57,7 +61,12 @@ class Activity_operador_menu_lateral : AppCompatActivity() {
                     true
                 }
                 R.id.boton_cerrar_sesion -> {
-                    drawer_layout.closeDrawer(GravityCompat.START)
+                    with(sharedPreferences.edit()){
+                        remove("operador")
+                        commit()
+                    }
+                    //val intent_login = Intent(this@Activity_operador_menu_lateral, Activity_general_login::class.java)
+                    finish()
                     true
                 }
                 else -> false
