@@ -25,14 +25,14 @@ class Activity_general_login : AppCompatActivity(), View.OnClickListener {
         sharedPreferences = getSharedPreferences("login",
             Context.MODE_PRIVATE)
 
-        if(sharedPreferences.getString("operador","@") == "operador" &&
-            sharedPreferences.getString("operador","@") != "@"){
+        if(sharedPreferences.getString("usuario","@") == "operador" &&
+            sharedPreferences.getString("usuario","@") != "@"){
             // mandar al home
             val intent_operador = Intent(this@Activity_general_login, Activity_operador_menu_lateral::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent_operador)
-        } else if(sharedPreferences.getString("receptor","@") == "receptor"  &&
-            sharedPreferences.getString("receptor","@") != "@"){
+        } else if(sharedPreferences.getString("usuario","@") == "receptor"  &&
+            sharedPreferences.getString("usuario","@") != "@"){
             val intent_receptor = Intent(this@Activity_general_login, Activity_receptor_menu_lateral::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent_receptor)
@@ -54,21 +54,26 @@ class Activity_general_login : AppCompatActivity(), View.OnClickListener {
                 val intent_operador = Intent(this@Activity_general_login, Activity_operador_menu_lateral::class.java)
                 val intent_receptor = Intent(this@Activity_general_login, Activity_receptor_menu_lateral::class.java)
 
-                if (usuario.text.toString() == "operador" &&  // peticion al API
+                // mandar usr(ingresada) + pass(ingresada)
+                // recibir usuario valido + operador + id_usuario || usuario valido + receptor + id_usuario|| usr o pass invalidos
+
+                if (usuario.text.toString() == "operador" &&  // comprobar la peticion del API
                     password.text.toString() == "123") {
                     // usuario correcto
                     with(sharedPreferences.edit()) {
-                        putString("operador", usuario.text.toString())
+                        putString("usuario", /*nombre/usuario usuario=*/ usuario.text.toString())
+                        putString("id_usuario", /*id usuario=*/ "123456")
                         commit()
                     }
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent_operador)
 
-                } else if (usuario.text.toString() == "receptor" &&  // peticion al API
+                } else if (usuario.text.toString() == "receptor" &&  // comprobar la peticion del API
                     password.text.toString() == "321") {
                     // usuario correcto
                     with(sharedPreferences.edit()) {
-                        putString("receptor", usuario.text.toString())
+                        putString("usuario", /*nombre/usuario usuario=*/ usuario.text.toString())
+                        putString("id_usuario", /*id usuario=*/ "654321")
                         commit()
                     }
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
