@@ -1,11 +1,13 @@
 package com.example.aplicacion_bamx
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.aplicacion_bamx.R
+import com.example.aplicacion_bamx.fragments.Fragment_operador_recoleccion_consulta
 import com.example.aplicacion_bamx.fragments.Fragment_receptor_recepcion_consulta
 import com.google.android.material.navigation.NavigationView
 
@@ -18,6 +20,15 @@ class Activity_receptor_menu_lateral : AppCompatActivity() {
         val image_menu = findViewById<ImageView>(R.id.image_menu)
         val navigationView = findViewById<NavigationView>(R.id.navigationView)
         val fragmentManager = supportFragmentManager
+
+        val sharedPreferences = getSharedPreferences("login",
+            Context.MODE_PRIVATE)
+
+        // Fragment inicial del operador
+        val ft = fragmentManager.beginTransaction()
+        ft.replace(R.id.contenedor, Fragment_operador_recoleccion_consulta())
+        ft.commit()
+        drawer_layout.closeDrawer(GravityCompat.START)
 
         image_menu.setOnClickListener {
             drawer_layout.openDrawer(GravityCompat.START)
@@ -33,7 +44,12 @@ class Activity_receptor_menu_lateral : AppCompatActivity() {
                     true
                 }
                 R.id.boton_cerrar_sesion -> {
-                    drawer_layout.closeDrawer(GravityCompat.START)
+                    with(sharedPreferences.edit()){
+                        remove("receptor")
+                        commit()
+                    }
+                    //val intent_login = Intent(this@Activity_operador_menu_lateral, Activity_general_login::class.java)
+                    finish()
                     true
                 }
                 else -> false
