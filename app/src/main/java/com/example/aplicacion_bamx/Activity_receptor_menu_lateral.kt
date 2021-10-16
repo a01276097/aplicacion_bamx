@@ -14,10 +14,19 @@ class Activity_receptor_menu_lateral : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.receptor_menu_lateral)
 
+
+
+
         val drawer_layout = findViewById<DrawerLayout>(R.id.drawer_layout)
         val image_menu = findViewById<ImageView>(R.id.image_menu)
         val navigationView = findViewById<NavigationView>(R.id.navigationView)
         val fragmentManager = supportFragmentManager
+
+
+        val ft = fragmentManager.beginTransaction()
+        ft.replace(R.id.contenedor, Fragment_receptor_recepcion_consulta())
+        ft.commit()
+        drawer_layout.closeDrawer(GravityCompat.START)
 
         image_menu.setOnClickListener {
             drawer_layout.openDrawer(GravityCompat.START)

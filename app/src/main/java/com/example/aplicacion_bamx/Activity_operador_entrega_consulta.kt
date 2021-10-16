@@ -1,6 +1,5 @@
 package com.example.aplicacion_bamx
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,7 +10,6 @@ import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.example.aplicacion_bamx.model.Entrega
-import com.example.aplicacion_bamx.model.Recoleccion
 import org.json.JSONException
 import java.text.SimpleDateFormat
 import java.util.*
@@ -21,7 +19,7 @@ class Activity_operador_entrega_consulta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.operador_entrega_consulta)
 
-        val emptystateEntrega = findViewById<LinearLayout>(R.id.layout_empystate_entrega)
+        val emptystateEntrega = findViewById<LinearLayout>(R.id.layout_empystate_receptor)
 
 
         val myTimeZone = TimeZone.getTimeZone("America/Mexico_City")

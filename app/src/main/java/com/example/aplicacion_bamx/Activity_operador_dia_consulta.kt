@@ -10,7 +10,7 @@ class Activity_operador_dia_consulta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.operador_dia_consulta)
 
-        val lstDia = findViewById<ListView>(R.id.lista_recolecciones)
+        val lstDia = findViewById<ListView>(R.id.lista_recepciones)
         val datos = listOf(Dia(0,"tienda a","calle a numero 1 colonia alfa"),
             Dia(1,"tienda b","calle b numero 2 colonia beta"),
             Dia(2,"tienda c","calle c numero 3 colonia kapa"),

@@ -12,15 +12,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.android.volley.Request
 import com.android.volley.RequestQueue
+import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.operador_recoleccion_formulario.*
 import org.json.JSONObject
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.collections.AbstractCollection
 
 class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationListener {
 
@@ -37,7 +41,9 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
         checkPermissions(this)
 
         val idDonor = intent.getIntExtra("Id", 0)
+        val idCollection = intent.getIntExtra("IdCollection", 0)
         val nombreDonador = intent.getStringExtra("Nombre")
+
 
 
         val donador = findViewById<TextView>(R.id.titulos_2)
@@ -47,7 +53,7 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
         val btnGuardar = findViewById<Button>(R.id.boton_continuar_nota)
 
         btnGuardar.setOnClickListener{
-            insertUser(idDonor, nombreDonador!!)
+            insertUser(idDonor, nombreDonador!!, idCollection)
         }
 
     }
@@ -58,8 +64,17 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
     }
 
 
-    fun insertUser(idDonor : Int, nombreDonador: String){
+    fun insertUser(idDonor : Int, nombreDonador: String, idCollection : Int){
 
+        var nota : String = ""
+        val hasNota = findViewById<RadioGroup>(R.id.radio_Formato)
+        val idRB = hasNota.checkedRadioButtonId
+
+        when (idRB) {
+            R.id.rdSi -> nota = "1"
+            R.id.rdNo -> nota = "0"
+            else -> nota = "-1"
+        }
 
         val myTimeZone = TimeZone.getTimeZone("America/Mexico_City")
         val local = Locale("es","MX")
@@ -70,6 +85,8 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
 
         val data = JSONObject()
         val collections = JSONObject()
+        collections.put("recolectado", "1")
+        collections.put("nota", nota)
         collections.put("folio", edtFolio.text.toString())
         collections.put("responsableEntrega", edtResponsable.text.toString())
         collections.put("longitud", longitud)
@@ -82,33 +99,38 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
         val rec3 = JSONObject()
         val rec4 = JSONObject()
 
+
+        rec1.put("idCollection", idCollection.toString())
         rec1.put("cantidad", edtPan.text.toString())
         rec1.put("idCategory", "1")
 
+        rec2.put("idCollection", idCollection.toString())
         rec2.put("cantidad", edtAbarrote.text.toString())
         rec2.put("idCategory", "2")
 
+        rec3.put("idCollection", idCollection.toString())
         rec3.put("cantidad", edtFrutaVerdura.text.toString())
         rec3.put("idCategory", "3")
 
+        rec4.put("idCollection", idCollection.toString())
         rec4.put("cantidad", edtNoComestible.text.toString())
         rec4.put("idCategory", "4")
 
         val collected = JSONObject()
 
         collected.put("rec1", rec1)
-        collected.put("rec2", rec1)
-        collected.put("rec3", rec1)
-        collected.put("rec4", rec1)
+        collected.put("rec2", rec2)
+        collected.put("rec3", rec3)
+        collected.put("rec4", rec4)
 
         data.put("collections", collections)
         data.put("collected", collected)
 
         Log.e("JSON", data.toString())
 
-        val txtDialog = "FOLIO ${collections["folio"]} \n  " +
-                        "${collections["fechaRecoleccion"]} \n\n " +
-                        "$nombreDonador \n " +
+        val txtDialog = "FOLIO ${collections["folio"]} \n " +
+                        "${collections["fechaRecoleccion"]} \n\n" +
+                        "$nombreDonador \n" +
                         "Pan: ${rec1["cantidad"]} kg \n" +
                         "Abarrote: ${rec2["cantidad"]} kg \n" +
                         "Fruta y verdura: ${rec3["cantidad"]} kg \n" +
@@ -117,24 +139,24 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
         val builder = AlertDialog.Builder(this@Activity_operador_recoleccion_formulario)
         builder.setTitle("Confirme su recolección")
             .setMessage(txtDialog)
-            .setPositiveButton("Confirmar", {dialog, button -> dialog.dismiss()})
+            .setPositiveButton("Confirmar"){_,_ ->
+                val jsonObjectRequest = JsonObjectRequest(
+                    Request.Method.PATCH,
+                    "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/donors/collected/collections?thisCollection=$idCollection",
+                    data,
+                    { response ->
+                        Log.e("VOLLEYRESPONSE", response.toString())
+                    },
+                    {error->
+                        Log.e("VOLLEYRESPONSE", error.message!!)
+                    }
+                )
+                queue.add(jsonObjectRequest)
+            }
             .setNegativeButton("Cancelar", {dialog, button -> dialog.dismiss()})
             .show()
 
-//        val jsonObjectRequest = JsonObjectRequest(
-//            Request.Method.POST,
-//            "https://bamx.maumr.repl.co/api/user",
-//            datos,
-//            { response ->
-//                Log.e("VOLLEYRESPONSE", response.toString())
-//            },
-//            {error->
-//                Log.e("VOLLEYRESPONSE", error.message!!)
-//            }
-//
-//        )
-//
-//        queue.add(jsonObjectRequest)
+
     }
 
 

@@ -19,7 +19,7 @@ class Fragment_operador_dia_consulta: Fragment() {
         val view = inflater.inflate(R.layout.operador_dia_consulta, container, false)
 
         //val view= inflater.inflate(R.layout.receptor...)
-        val lstDia = view.findViewById<ListView>(R.id.lista_recolecciones)
+        val lstDia = view.findViewById<ListView>(R.id.lista_recepciones)
         val datos = listOf(
             Dia(0,"tienda a","calle a numero 1 colonia alfa"),
             Dia(1,"tienda b","calle b numero 2 colonia beta"),

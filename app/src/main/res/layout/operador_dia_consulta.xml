@@ -85,7 +85,7 @@
                     app:layout_alignSelf="center" />
 
                 <ListView
-                    android:id="@+id/lista_recolecciones"
+                    android:id="@+id/lista_recepciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="30dp"

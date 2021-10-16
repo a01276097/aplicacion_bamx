@@ -37,11 +37,11 @@ class   Fragment_operador_recoleccion_consulta: Fragment() {
         val txtFecha = view.findViewById<TextView>(R.id.txtFechaNota)
         txtFecha.text=currentDateAndTime
 
-        val emptystate = view.findViewById<LinearLayout>(R.id.layout_empystate_entrega)
+        val emptystate = view.findViewById<LinearLayout>(R.id.layout_empystate_receptor)
 
 
         val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/driver?thisDriver=7"
-        val lstRecolecciones = view.findViewById<ListView>(R.id.lista_recolecciones)
+        val lstRecolecciones = view.findViewById<ListView>(R.id.lista_recepciones)
         val recolecciones = mutableListOf<Recoleccion>()
         val requestQueue = Volley.newRequestQueue(requireContext())
 
@@ -54,6 +54,7 @@ class   Fragment_operador_recoleccion_consulta: Fragment() {
                     val jsonArray = response.getJSONArray("data")
                     for (i in 0 until jsonArray.length()) {
                         val jsonObject = jsonArray.getJSONObject(i)
+                        val idCollection  = jsonObject.getInt("idCollection")
                         val idDonor = jsonObject.getInt("idDonor")
                         val nombre = jsonObject.getString("nombre")
                         val callen = jsonObject.getString("calle")
@@ -63,7 +64,7 @@ class   Fragment_operador_recoleccion_consulta: Fragment() {
                         val cp = jsonObject.getString("cp")
                         val estado = jsonObject.getString("estado")
                         val direccion = callen + ", " + numExterior + ", " + colonia + ", " + municipio + ", " + estado + ", " + cp
-                        recolecciones.add(i, Recoleccion(idDonor, nombre, direccion))
+                        recolecciones.add(i, Recoleccion(idCollection, idDonor, nombre, direccion))
 
 
                         val adaptador = Adapter_operador_recolecciones(requireActivity(), R.layout.operador_card_consulta_recoleccion, recolecciones)
@@ -75,6 +76,7 @@ class   Fragment_operador_recoleccion_consulta: Fragment() {
                             val intent = Intent(requireActivity(), Activity_operador_recoleccion_formulario:: class.java)
                             intent.putExtra("Id", recolecciones[position].donador_id)
                             intent.putExtra("Nombre", recolecciones[position].donador_nombre)
+                            intent.putExtra("IdCollection", recolecciones[position].recoleccion_id)
                             startActivity(intent)
                         }
                     }

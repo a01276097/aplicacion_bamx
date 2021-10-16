@@ -1,37 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/orange_gradient_bg"
+    android:padding="50dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titulos_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebasneue"
+            android:text="Confirmar recepción de donativo"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_alignSelf="center" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_card"
             android:orientation="vertical"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
-
-            <TextView
-                android:id="@+id/titulos_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Confirmar recepción de donativo"
-                app:layout_alignSelf="center" />
+            android:padding="20dp">
 
             <TextView
                 android:id="@+id/titulos_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#CARD_DE_OPERADOR!!!!"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/bebasneue"
+                android:text="#NombreOperador"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtUsuarioOperador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/manropebold"
+                android:text="#UsuarioOperador"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtUnidadOperador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/manropebold"
+                android:text="#UnidadOperador"
+                android:textColor="@color/black"
+                android:textSize="16sp"
                 app:layout_alignSelf="center" />
 
         </LinearLayout>
@@ -39,113 +70,68 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical" >
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/txtFrutaVerduraRecepcion"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/txtFrutaVerduraNota"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Fruta y verdura: "
-                    app:layout_alignSelf="center"/>
-                <TextView
-                    android:id="@+id/fruta_verdura_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#numero_kilos"
-                    app:layout_alignSelf="center"/>
-                <TextView
-                    android:id="@+id/fruta_verdura_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" kg"/>
-            </LinearLayout>
+                android:fontFamily="@font/bebasneue"
+                android:text="Fruta y verdura"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/txtPanRecepcion"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/txtPanNota"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pan: "
-                    app:layout_alignSelf="center"/>
-                <TextView
-                    android:id="@+id/pan_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#numero_kilos"
-                    app:layout_alignSelf="center"/>
-                <TextView
-                    android:id="@+id/pan_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" kg"/>
-            </LinearLayout>
+                android:fontFamily="@font/bebasneue"
+                android:text="Pan"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/txtAbarroteRecepcion"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/txtAbarroteNota"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Abarrote: "
-                    app:layout_alignSelf="center"/>
-                <TextView
-                    android:id="@+id/abarrote_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#numero_kilos"
-                    app:layout_alignSelf="center"/>
-                <TextView
-                    android:id="@+id/abarrote_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" kg"/>
-            </LinearLayout>
+                android:fontFamily="@font/bebasneue"
+                android:text="Abarrote:"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/txtNoComestibleRecepcion"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/txtNoComestibleNota"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No comestible: "
-                    app:layout_alignSelf="center"/>
-                <TextView
-                    android:id="@+id/no_comestible2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#numero_kilos"
-                    app:layout_alignSelf="center"/>
-                <TextView
-                    android:id="@+id/no_comestible3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" kg"/>
-            </LinearLayout>
+                android:fontFamily="@font/bebasneue"
+                android:text="No comestible:"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
         </LinearLayout>
+
     </LinearLayout>
+
     <Button
         android:id="@+id/boton_continuar_nota"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#C54507"
+        android:fontFamily="@font/bebasneue"
         android:text="Modificar"
-        app:layout_alignSelf="center"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="34sp"
+        app:cornerRadius="25dp"
+        app:layout_alignSelf="center" />
+
     <Button
         android:id="@+id/boton_entrega_2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/bebasneue"
         android:text="Confirmar"
-        app:layout_alignSelf="center"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="34sp"
+        app:cornerRadius="25dp"
+        app:layout_alignSelf="center" />
 </LinearLayout>

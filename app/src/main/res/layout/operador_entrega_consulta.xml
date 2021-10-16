@@ -86,7 +86,7 @@
                     app:layout_alignSelf="center" />
 
                 <LinearLayout
-                    android:id="@+id/layout_empystate_entrega"
+                    android:id="@+id/layout_empystate_receptor"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
