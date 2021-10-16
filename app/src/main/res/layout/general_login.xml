@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/manrope"
-            android:text="Usuario"
+            android:hint="Usuario"
             android:textColor="@color/white"
             app:layout_alignSelf="center" />
 
@@ -57,7 +57,7 @@
             android:layout_marginBottom="50dp"
             android:fontFamily="@font/manrope"
             android:inputType="textVisiblePassword"
-            android:text="Contraseña"
+            android:hint="Contraseña"
             android:textColor="@color/white"
             app:layout_alignSelf="center" />
 
