@@ -4,121 +4,114 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#00FFFFFF"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/bienvenida_1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:orientation="horizontal">
+            android:fontFamily="@font/bebasneue"
+            android:text="@string/bienbenida_usuario"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_alignSelf="center" />
 
-            <TextView
-                android:id="@+id/bienvenida_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/bebasneue"
-                android:text="Bienvenido, "
-                android:textColor="@color/black"
-                android:textSize="34sp"
-                app:layout_alignSelf="center" />
+        <TextView
+            android:id="@+id/bienvenida_operador_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebasneue"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_alignSelf="center" />
 
-            <TextView
-                android:id="@+id/bienvenida_operador_nombre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/bebasneue"
-                android:text="#operadorX"
-                android:textColor="@color/black"
-                android:textSize="34sp"
-                app:layout_alignSelf="center" />
+    </LinearLayout>
 
-        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tipo_pantalla_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/bebasneue"
+            android:text="@string/tipo_operador_dia_consulta"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_alignSelf="center" />
+
+        <TextView
+            android:id="@+id/txtFechaNota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manropebold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_alignSelf="center" />
+
+        <TextView
+            android:id="@+id/indicaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/bebasneue"
+            android:text="@string/indicaciones_operador_dia_consulta"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_alignSelf="center" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tipo_pantalla_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
-                android:fontFamily="@font/bebasneue"
-                android:text="Consultar recolecciones realizadas"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                app:layout_alignSelf="center" />
-
-            <TextView
-                android:id="@+id/txtFechaNota"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/manropebold"
-                android:text="#fecha"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_alignSelf="center" />
-
-            <TextView
-                android:id="@+id/indicaciones"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/bebasneue"
-                android:text="Recolecciones del dia:"
-                android:textColor="@color/black"
-                android:textSize="34sp"
-                app:layout_alignSelf="center" />
-
             <LinearLayout
+                android:id="@+id/layout_empystate_hechas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/layout_empystate_hechas"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="301dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    app:srcCompat="@drawable/es_limon" />
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="301dp"
-                        android:layout_gravity="center|center_horizontal|center_vertical"
-                        app:srcCompat="@drawable/es_limon" />
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="@font/manroperegular"
-                        android:gravity="center|center_horizontal|center_vertical"
-                        android:text="Por favor espere a que el coordinador de tráfico le asigne una ruta de recolección."
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp" />
-                </LinearLayout>
-
-                <ListView
-                    android:id="@+id/lista_recolecciones_hechas"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="30dp"
-                    android:divider="@null"
-                    android:dividerHeight="10dp"
-                    android:visibility="gone" />
-
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/manroperegular"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="@string/vacio_operador_dia_consulta"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
             </LinearLayout>
 
+            <ListView
+                android:id="@+id/lista_recolecciones_hechas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:visibility="gone" />
+
         </LinearLayout>
+
     </LinearLayout>
+
 </LinearLayout>

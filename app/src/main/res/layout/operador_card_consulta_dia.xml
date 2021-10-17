@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -13,28 +11,20 @@
     android:padding="15dp">
 
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/donador_nombre_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:fontFamily="@font/bebasneue"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/donador_nombre_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bebasneue"
-            android:text="#tienda"
-            android:textColor="@color/black"
-            android:textSize="30sp" />
+    <TextView
+        android:id="@+id/donador_direccion_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manroperegular"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/donador_direccion_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/manroperegular"
-            android:text="#direccionCompleta"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-    </LinearLayout>
 </LinearLayout>

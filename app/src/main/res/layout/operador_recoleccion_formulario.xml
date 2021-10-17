@@ -19,7 +19,7 @@
         android:layout_marginTop="50dp"
         android:fontFamily="@font/bebasneue"
         android:gravity="center"
-        android:text="Registrar recolección"
+        android:text="@string/titulo_operador_recoleccion_formulario"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_alignSelf="center" />
@@ -31,7 +31,6 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/bebasneue"
         android:gravity="center"
-        android:text="#ubicación"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_alignSelf="center" />
@@ -55,53 +54,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="¿Recibió formato de registro del donante?"
+            android:text="@string/pregunta_formato_operador_recoleccion_formulario"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_alignSelf="center" />
 
-        <LinearLayout
+        <RadioGroup
+            android:id="@+id/radio_Formato"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <RadioGroup
-                android:id="@+id/radio_Formato"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rdSi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:text="@string/si"
+                android:textColor="@color/black"
+                android:textColorHint="#333333"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
 
-                <RadioButton
-                    android:id="@+id/rdSi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/manroperegular"
-                    android:text="Si"
-                    android:textColor="@color/black"
-                    android:textColorHint="#333333"
-                    android:textSize="16sp"
-                    app:layout_alignSelf="center" />
-
-                <RadioButton
-                    android:id="@+id/rdNo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/manroperegular"
-                    android:text="No"
-                    android:textColor="@color/black"
-                    android:textColorHint="#333333"
-                    android:textSize="16sp"
-                    app:layout_alignSelf="center" />
-            </RadioGroup>
-
-        </LinearLayout>
+            <RadioButton
+                android:id="@+id/rdNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:text="@string/no"
+                android:textColor="@color/black"
+                android:textColorHint="#333333"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/txtFolio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="No. de folio"
+            android:text="@string/pregunta_folio_operador_recoleccion_formulario"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_alignSelf="center" />
@@ -112,18 +104,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/manroperegular"
-            android:hint="Ingrese el No. de folio"
+            android:hint="@string/respuesta_folio_operador_recoleccion_formulario"
             android:textColor="@color/black"
             android:textColorHint="#5E5E5E"
             android:textSize="16sp"
-            app:layout_alignSelf="center" />
+            app:layout_alignSelf="center"
+            android:inputType="text"/>
 
         <TextView
             android:id="@+id/txtResponsable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="Responsable de tienda (entrega)"
+            android:text="@string/pregunta_responsable_operador_recoleccion_formulario"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_alignSelf="center" />
@@ -134,11 +127,12 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/manroperegular"
-            android:hint="Nombre del responsable"
+            android:hint="@string/respuesta_responsable_operador_recoleccion_formulario"
             android:textColor="@color/black"
             android:textColorHint="#5E5E5E"
             android:textSize="16sp"
-            app:layout_alignSelf="center" />
+            app:layout_alignSelf="center"
+            android:inputType="text"/>
 
         <TextView
             android:id="@+id/txtCategorias"
@@ -147,7 +141,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/bebasneue"
             android:gravity="center"
-            android:text="Categorías contenidas en la donación"
+            android:text="@string/categorias_operador_recoleccion_formulario"
             android:textColor="@color/white"
             android:textSize="30sp"
             app:layout_alignSelf="center" />
@@ -157,7 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="Abarrote"
+            android:text="@string/abarrote"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_alignSelf="center" />
@@ -168,18 +162,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/manroperegular"
-            android:hint="Cantidad en Kg."
+            android:hint="@string/cantidad_operador_recoleccion_formulario"
             android:textColor="@color/black"
             android:textColorHint="#5E5E5E"
             android:textSize="16sp"
-            app:layout_alignSelf="center" />
+            app:layout_alignSelf="center"
+            android:inputType="number"/>
 
         <TextView
             android:id="@+id/txtFrutaVerdura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="Fruta y Verdura"
+            android:text="@string/fruta_verdura"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_alignSelf="center" />
@@ -190,18 +185,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/manroperegular"
-            android:hint="Cantidad en Kg."
+            android:hint="@string/cantidad_operador_recoleccion_formulario"
             android:textColor="@color/black"
             android:textColorHint="#5E5E5E"
             android:textSize="16sp"
-            app:layout_alignSelf="center" />
+            app:layout_alignSelf="center"
+            android:inputType="number"/>
 
         <TextView
             android:id="@+id/txtPan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="Pan"
+            android:text="@string/pan"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_alignSelf="center" />
@@ -212,18 +208,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/manroperegular"
-            android:hint="Cantidad en Kg."
+            android:hint="@string/cantidad_operador_recoleccion_formulario"
             android:textColor="@color/black"
             android:textColorHint="#5E5E5E"
             android:textSize="16sp"
-            app:layout_alignSelf="center" />
+            app:layout_alignSelf="center"
+            android:inputType="number"/>
 
         <TextView
             android:id="@+id/txtNoComestible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="No comestible"
+            android:text="@string/no_comestible"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_alignSelf="center" />
@@ -234,11 +231,12 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/manroperegular"
-            android:hint="Cantidad en Kg."
+            android:hint="@string/cantidad_operador_recoleccion_formulario"
             android:textColor="@color/black"
             android:textColorHint="#5E5E5E"
             android:textSize="16sp"
-            app:layout_alignSelf="center" />
+            app:layout_alignSelf="center"
+            android:inputType="number"/>
 
         <Button
             android:id="@+id/boton_continuar_nota"
@@ -246,7 +244,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
             android:gravity="center|center_horizontal"
-            android:text="Registrar"
+            android:text="@string/registrar_operador_recoleccion_formulario"
             android:textAllCaps="false"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="34sp"

@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bebasneue"
-                android:text="Bienvenido, "
+                android:text="@string/bienbenida_usuario"
                 android:textColor="@color/black"
                 android:textSize="34sp"
                 app:layout_alignSelf="center" />
@@ -34,7 +34,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bebasneue"
-                android:text="#operadorX"
                 android:textColor="@color/black"
                 android:textSize="34sp"
                 app:layout_alignSelf="center" />
@@ -52,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/bebasneue"
-                android:text="Consultar ruta de recolección"
+                android:text="@string/tipo_operador_recoleccion_consulta"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 app:layout_alignSelf="center" />
@@ -62,7 +61,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manropebold"
-                android:text="#fecha"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_alignSelf="center" />
@@ -78,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/bebasneue"
-                    android:text="Se espera recolección en:"
+                    android:text="@string/indicaciones_operador_recoleccion_consulta"
                     android:textColor="@color/black"
                     android:textSize="34sp"
                     app:layout_alignSelf="center" />
@@ -103,9 +101,9 @@
                         android:layout_gravity="center"
                         android:fontFamily="@font/manroperegular"
                         android:gravity="center|center_horizontal|center_vertical"
-                        android:text="Por favor espere a que el coordinador de tráfico le asigne una ruta de recolección."
+                        android:text="@string/vacio_operador_recoleccion_consulta"
                         android:textColor="#FFFFFF"
-                        android:textSize="16sp" />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
                 <ListView
