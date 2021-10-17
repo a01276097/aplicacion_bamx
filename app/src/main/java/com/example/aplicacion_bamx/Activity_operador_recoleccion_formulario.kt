@@ -4,6 +4,7 @@ import android.Manifest
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationListener
@@ -146,6 +147,11 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
                     data,
                     { response ->
                         Log.e("VOLLEYRESPONSE", response.toString())
+                        val notaConfirmacion = Intent(this@Activity_operador_recoleccion_formulario, Activity_operador_recoleccion_nota::class.java)
+                        notaConfirmacion.putExtra("idRecoleccion", idCollection)
+                        intent.putExtra("previa", "formulario")
+                        startActivity(notaConfirmacion)
+
                     },
                     {error->
                         Log.e("VOLLEYRESPONSE", error.message!!)

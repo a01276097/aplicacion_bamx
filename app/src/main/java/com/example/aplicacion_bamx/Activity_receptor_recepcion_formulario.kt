@@ -12,10 +12,10 @@ class Activity_receptor_recepcion_formulario : AppCompatActivity() {
         val nombreOperador = intent.getStringExtra("nombre")
         val unidad = intent.getStringExtra("unidad")
         val usuarioOperador = intent.getStringExtra("usuario")
-        val cantPan = intent.getStringExtra("pan")
-        val cantAbarrote = intent.getStringExtra("abarrote")
-        val cantFrutaVerdura = intent.getStringExtra("fruta")
-        val cantNoComestible = intent.getStringExtra("noComestible")
+        val cantPan = intent.getIntExtra("pan",0)
+        val cantAbarrote = intent.getIntExtra("abarrote",0)
+        val cantFrutaVerdura = intent.getIntExtra("fruta",0)
+        val cantNoComestible = intent.getIntExtra("noComestible",0)
 
 
         val tNombreOperador = findViewById<TextView>(R.id.titulos_2)

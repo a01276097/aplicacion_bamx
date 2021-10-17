@@ -30,7 +30,7 @@ class Activity_receptor_recepcion_consulta : AppCompatActivity() {
         simpleDateFormat.setTimeZone(myTimeZone)
         val currentDateAndTime: String = simpleDateFormat.format(Date())
 
-        val txtFecha = findViewById<TextView>(R.id.txtFechaEntrega)
+        val txtFecha = findViewById<TextView>(R.id.txtFechaRecepcion)
         txtFecha.text=currentDateAndTime
 
         val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/assigneddeliveries/1"
@@ -67,7 +67,7 @@ class Activity_receptor_recepcion_consulta : AppCompatActivity() {
                             val intent = Intent(this@Activity_receptor_recepcion_consulta, Activity_receptor_recepcion_formulario:: class.java)
                             intent.putExtra("nombre", recepciones[position].operador_nombre)
                             intent.putExtra("unidad", recepciones[position].operador_unidad)
-                            intent.putExtra("usuario", recepciones[position].operador_unidad)
+                            intent.putExtra("usuario", recepciones[position].operador_usuario)
                             intent.putExtra("pan", recepciones[position].pan)
                             intent.putExtra("abarrote", recepciones[position].abarrote)
                             intent.putExtra("fruta", recepciones[position].fruta)

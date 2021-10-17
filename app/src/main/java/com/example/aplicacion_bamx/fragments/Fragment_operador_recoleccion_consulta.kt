@@ -40,7 +40,7 @@ class   Fragment_operador_recoleccion_consulta: Fragment() {
         val emptystate = view.findViewById<LinearLayout>(R.id.layout_empystate_receptor)
 
 
-        val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/driver?thisDriver=7"
+        val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/driver?thisDriver=2"
         val lstRecolecciones = view.findViewById<ListView>(R.id.lista_recepciones)
         val recolecciones = mutableListOf<Recoleccion>()
         val requestQueue = Volley.newRequestQueue(requireContext())
