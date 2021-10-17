@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="Confirmar recepción de donativo"
+            android:text="@string/titulo_receptor_recepcion_formulario"
             android:textColor="@color/white"
             android:textSize="34sp"
             app:layout_alignSelf="center" />
@@ -37,7 +37,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/bebasneue"
-                android:text="#NombreOperador"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 app:layout_alignSelf="center" />
@@ -46,9 +45,8 @@
                 android:id="@+id/txtUsuarioOperador"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/manropebold"
-                android:text="#UsuarioOperador"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_alignSelf="center" />
@@ -57,10 +55,9 @@
                 android:id="@+id/txtUnidadOperador"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/manropebold"
-                android:text="#UnidadOperador"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_alignSelf="center" />
@@ -74,11 +71,20 @@
             android:orientation="vertical" >
 
             <TextView
+                android:id="@+id/txtAbarroteRecepcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebasneue"
+                android:text="@string/abarrote"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
                 android:id="@+id/txtFrutaVerduraRecepcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bebasneue"
-                android:text="Fruta y verdura"
+                android:text="@string/fruta_verdura"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
 
@@ -87,16 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bebasneue"
-                android:text="Pan"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/txtAbarroteRecepcion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/bebasneue"
-                android:text="Abarrote:"
+                android:text="@string/pan"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
 
@@ -105,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bebasneue"
-                android:text="No comestible:"
+                android:text="@string/no_comestible"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
         </LinearLayout>
@@ -118,7 +115,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#C54507"
         android:fontFamily="@font/bebasneue"
-        android:text="Modificar"
+        android:text="@string/modificar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="34sp"
         app:cornerRadius="25dp"
@@ -129,7 +126,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bebasneue"
-        android:text="Confirmar"
+        android:text="@string/confirmar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="34sp"
         app:cornerRadius="25dp"

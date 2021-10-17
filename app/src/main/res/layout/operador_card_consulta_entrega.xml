@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="40dp"
@@ -23,7 +21,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="#ubicacion"
             android:textColor="@color/black"
             android:textSize="30sp" />
 
@@ -32,7 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manropebold"
-            android:text="#direccionCompleta"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -47,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manropebold"
-            android:text="Fruta y verdura(kg): "
+            android:text="@string/fruta_verdura_kg"
             android:textSize="20sp" />
 
         <TextView
@@ -55,7 +51,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manroperegular"
-            android:text="#cantidad"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -70,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manropebold"
-            android:text="Pan(kg): "
+            android:text="@string/pan_kg"
             android:textSize="20sp" />
 
         <TextView
@@ -78,7 +73,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manroperegular"
-            android:text="#cantidad"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -93,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manropebold"
-            android:text="Abarrote(kg): "
+            android:text="@string/abarrote_kg"
             android:textSize="20sp" />
 
         <TextView
@@ -101,7 +95,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manroperegular"
-            android:text="#cantidad"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -116,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manropebold"
-            android:text="No comestible(kg): "
+            android:text="@string/no_comestible_kg"
             android:textSize="20sp" />
 
         <TextView
@@ -124,7 +117,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manroperegular"
-            android:text="#cantidad"
             android:textSize="20sp" />
 
     </LinearLayout>

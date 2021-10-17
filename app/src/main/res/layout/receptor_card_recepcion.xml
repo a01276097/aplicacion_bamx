@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -23,7 +21,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="#operador_nombre"
             android:textColor="@color/black"
             android:textSize="24sp" />
 
@@ -47,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manropebold"
-                android:text="Operador "
+                android:text="@string/operador_receptor_card"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -56,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manropebold"
-                android:text="Unidad "
+                android:text="@string/unidad_receptor_card"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -69,11 +66,20 @@
             android:padding="5dp">
 
             <TextView
+                android:id="@+id/txtAbarroteNota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manropebold"
+                android:text="@string/abarrote_kg"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
                 android:id="@+id/txtFrutaVerduraNota"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manropebold"
-                android:text="Fruta y verdura(kg): "
+                android:text="@string/fruta_verdura_kg"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -82,16 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manropebold"
-                android:text="Pan(kg): "
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/txtAbarroteNota"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/manropebold"
-                android:text="Abarrote(kg): "
+                android:text="@string/pan_kg"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -100,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manropebold"
-                android:text="No comestible(kg): "
+                android:text="@string/no_comestible_kg"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 

@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
             android:gravity="center"
-            android:text="Nota de recolección realizada"
+            android:text="@string/titulo_operador_nota_recoleccion"
             android:textColor="@color/white"
             android:textColorLink="@color/verde"
             android:textSize="34sp"
@@ -52,8 +52,7 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/manroperegular"
                 android:gravity="center"
-                android:phoneNumber="false"
-                android:text="En caso de errores, diríjase con el administrador del sistema."
+                android:text="@string/errores_operador_nota_recoleccion"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_alignSelf="center" />
@@ -65,7 +64,7 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/manropebold"
                 android:gravity="center"
-                android:text="No recibio nota del establecimiento donador"
+                android:text="@string/nota_operador_nota_recoleccion"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_alignSelf="center" />
@@ -76,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manroperegular"
                 android:gravity="center"
-                android:text="Folio "
+                android:text="@string/folio__"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_alignSelf="center" />
@@ -88,7 +87,6 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/manroperegular"
                 android:gravity="center"
-                android:text="#fecha"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 app:layout_alignSelf="center" />
@@ -99,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manroperegular"
                 android:gravity="center"
-                android:text="Recibió de "
+                android:text="@string/recibio_operadro_nota_recoleccion"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 app:layout_alignSelf="center" />
@@ -111,40 +109,6 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/manropebold"
                 android:gravity="center"
-                android:text="#donador"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_alignSelf="center" />
-
-            <TextView
-                android:id="@+id/txtNoComestibleNota"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/manroperegular"
-                android:gravity="center"
-                android:text="No comestible: "
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_alignSelf="center" />
-
-            <TextView
-                android:id="@+id/txtPanNota"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/manroperegular"
-                android:gravity="center"
-                android:text="Pan: "
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_alignSelf="center" />
-
-            <TextView
-                android:id="@+id/txtFrutaVerduraNota"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/manroperegular"
-                android:gravity="center"
-                android:text="Fruta y verdura: "
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_alignSelf="center" />
@@ -156,7 +120,40 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/manroperegular"
                 android:gravity="center"
-                android:text="Abarrote: "
+                android:text="@string/abarrote"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtFrutaVerduraNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="@string/fruta_verdura"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtPanNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="@string/pan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_alignSelf="center" />
+
+            <TextView
+                android:id="@+id/txtNoComestibleNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manroperegular"
+                android:gravity="center"
+                android:text="@string/no_comestible"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_alignSelf="center" />
@@ -166,7 +163,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bebasneue"
-                android:text="Continuar"
+                android:text="@string/continuar"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="34sp"
                 app:cornerRadius="25dp"

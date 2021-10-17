@@ -1,5 +1,84 @@
 <resources>
-    <string name="app_name">aplicacion_bamx</string>
+    <!--    general    -->
+    <string name="app_name">App BAMX</string>
+    <string name="morelos">Morelos</string>
+    <string name="bienbenida">Bienbenido/a</string>
+    <string name="bienbenida_usuario">Bienbenido/a, </string>
+    <string name="fruta_verdura">Fruta y verdura:</string>
+    <string name="pan">Pan:</string>
+    <string name="abarrote">Abarrote:</string>
+    <string name="no_comestible">No comestible:</string>
+    <string name="continuar">Continuar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="modificar">Modificar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="folio__">Folio </string>
+    <string name="kg">Kg</string>
+    <string name="cero">0</string>
+
+    <!--    general_login    -->
+    <string name="inicia_sesion_indicacion">Inicia sesión para comenzar</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="olvide_contraseña">Olvidé mi contraseña</string>
+    <string name="bando_alimentos_info">Banco de alimentos de Morelos. 2021.</string>
+
+    <!--    operador_card_consulta_entrega    -->
+    <string name="fruta_verdura_kg">Fruta y verdura(kg): </string>
+    <string name="pan_kg">Pan(kg): </string>
+    <string name="abarrote_kg">Abarrote(kg): </string>
+    <string name="no_comestible_kg">No comestible(kg): </string>
+
+    <!--    operador_dia_consulta    -->
+    <string name="tipo_operador_dia_consulta">Consultar recolecciones realizadas</string>
+    <string name="indicaciones_operador_dia_consulta">Recolecciones del dia:</string>
+    <string name="vacio_operador_dia_consulta">Cuando haga una recoleccion aparecera aqui.</string>
+
+    <!--    operador_entrega_consulta    -->
+    <string name="tipo_operador_entrega_consulta">Consultar ruta de entrega</string>
+    <string name="indicaciones_operador_entrega_consulta">Se espera entrega en</string>
+    <string name="vacio_operador_entrega_consulta">Por favor espere a que el coordinador de tráfico le asigne una ruta de entrega.</string>
+
+    <!--    operador_recoleccion_consulta    -->
+    <string name="tipo_operador_recoleccion_consulta">Consultar ruta de recolección</string>
+    <string name="indicaciones_operador_recoleccion_consulta">Se espera recolección en:</string>
+    <string name="vacio_operador_recoleccion_consulta">Por favor espere a que el coordinador de tráfico le asigne una ruta de recolección.</string>
+
+    <!--    operador_recoleccion_formulario    -->
+    <string name="titulo_operador_recoleccion_formulario">Registrar recolección</string>
+    <string name="pregunta_formato_operador_recoleccion_formulario">¿Recibió formato de registro del donante?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="pregunta_folio_operador_recoleccion_formulario">No. de folio</string>
+    <string name="respuesta_folio_operador_recoleccion_formulario">Ingrese el No. de folio</string>
+    <string name="pregunta_responsable_operador_recoleccion_formulario">Responsable de tienda (entrega)</string>
+    <string name="respuesta_responsable_operador_recoleccion_formulario">Nombre del responsable</string>
+    <string name="categorias_operador_recoleccion_formulario">Categorías contenidas en la donación</string>
+    <string name="cantidad_operador_recoleccion_formulario">Cantidad en Kg.</string>
+    <string name="registrar_operador_recoleccion_formulario">Registrar</string>
+
+    <!--    operador_nota_recoleccion    -->
+    <string name="titulo_operador_nota_recoleccion">Nota de recolección realizada</string>
+    <string name="errores_operador_nota_recoleccion">En caso de errores, diríjase con el administrador del sistema.</string>
+    <string name="nota_operador_nota_recoleccion">No recibio nota del establecimiento donador</string>
+    <string name="recibio_operadro_nota_recoleccion">Recibió de </string>
+
+    <!--    receptor_card_xxxx    -->
+    <string name="operador_receptor_card">Operador </string>
+    <string name="unidad_receptor_card">Unidad </string>
+
+    <!--    receptor_recepcion_consulta    -->
+    <string name="tipo_receptor_recepcion_consulta">Operadores en ruta de entrega</string>
+    <string name="indicaciones_receptor_rececion_consulta">Espere entrega de:</string>
+    <string name="vacio_receptor_recepcion_consulta">Por favor espere a que el coordinador de tráfico le asigne entregas por recibir.</string>
+
+    <!--    receptor_recepcion_formulario    -->
+    <string name="titulo_receptor_recepcion_formulario">Confirmar recepción de donativo</string>
+
+    <!--    receptor_recepcion_modificar    -->
+    <string name="titulo_receptor_recepcion_modificar">Modifique la entrega del donativo</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
