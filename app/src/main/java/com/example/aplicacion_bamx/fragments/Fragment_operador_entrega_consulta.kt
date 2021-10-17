@@ -26,7 +26,7 @@ class Fragment_operador_entrega_consulta: Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.operador_entrega_consulta, container, false)
 
-        val emptystateEntrega = view.findViewById<LinearLayout>(R.id.layout_empystate_entrega)
+        val emptystateEntrega = view.findViewById<LinearLayout>(R.id.layout_empystate_receptor)
 
 
         val myTimeZone = TimeZone.getTimeZone("America/Mexico_City")

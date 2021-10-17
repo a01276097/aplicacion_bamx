@@ -60,14 +60,14 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/boton_si_1"
+                        android:id="@+id/rdSi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Si"
                         app:layout_alignSelf="center"/>
 
                     <RadioButton
-                        android:id="@+id/boton_no_1"
+                        android:id="@+id/rdNo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No"

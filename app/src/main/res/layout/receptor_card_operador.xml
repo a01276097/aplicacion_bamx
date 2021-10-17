@@ -38,7 +38,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/operador"
+                android:id="@+id/operador_usuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Operador "/>
@@ -56,7 +56,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/unidad"
+                android:id="@+id/operador_unidad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Unidad "/>

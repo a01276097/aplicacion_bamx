@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -27,11 +28,25 @@ class Activity_operador_menu_lateral : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences("login",
             Context.MODE_PRIVATE)
 
-        // Fragment inicial del operador
-        val ft = fragmentManager.beginTransaction()
-        ft.replace(R.id.contenedor, Fragment_operador_recoleccion_consulta())
-        ft.commit()
-        drawer_layout.closeDrawer(GravityCompat.START)
+        val previa = intent.getIntExtra("pantalla",0)
+
+
+        if (previa==0){
+            // Fragment inicial del operador
+            val ft = fragmentManager.beginTransaction()
+            ft.replace(R.id.contenedor, Fragment_operador_recoleccion_consulta())
+            ft.commit()
+            drawer_layout.closeDrawer(GravityCompat.START)
+        }
+
+        else{
+            val ft = fragmentManager.beginTransaction()
+            ft.replace(R.id.contenedor, Fragment_operador_dia_consulta())
+            ft.commit()
+            drawer_layout.closeDrawer(GravityCompat.START)
+
+        }
+
 
         image_menu.setOnClickListener {
             drawer_layout.openDrawer(GravityCompat.START)

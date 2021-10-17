@@ -84,7 +84,7 @@
                     app:layout_alignSelf="center" />
 
                 <LinearLayout
-                    android:id="@+id/layout_empystate_entrega"
+                    android:id="@+id/layout_empystate_receptor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -109,7 +109,7 @@
                 </LinearLayout>
 
                 <ListView
-                    android:id="@+id/lista_recolecciones"
+                    android:id="@+id/lista_recepciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"

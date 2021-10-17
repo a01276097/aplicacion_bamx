@@ -32,6 +32,8 @@
         <entry key="..\:/Users/diego/Desktop/BAMX/aplicacion_bamx/app/src/main/res/layout/recolecion_terminada.xml" value="0.2" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/drawable/border_card.xml" value="0.3640625" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/drawable/border_card_green.xml" value="0.32708333333333334" />
+        <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/drawable/ic_cerrar_sesion.xml" value="0.3640625" />
+        <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/drawable/orange_gradient_bg.xml" value="0.3640625" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/drawable/red_gradient_bg.xml" value="0.3640625" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/general_login.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/operador_card_consulta_dia.xml" value="0.3109375" />
@@ -43,11 +45,14 @@
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/operador_menu_lateral.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/operador_nota_recoleccion.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/operador_recoleccion_consulta.xml" value="0.34791666666666665" />
-        <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/operador_recoleccion_formulario.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/operador_recoleccion_formulario.xml" value="0.25" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/operador_recoleccion_nota.xml" value="0.33" />
+        <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/plantilla_menu_lateral.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/receptor_card_recepcion.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/receptor_menu_lateral.xml" value="0.33229166666666665" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/receptor_recepcion_consulta.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/receptor_recepcion_formulario.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/receptor_recepcion_modificar.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/layout/x_receptor_consulta_recepcion.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/emman/Documents/TC2007B/aplicacion_bamx/app/src/main/res/xml/network_config.xml" value="0.21145833333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20260416666666667" />

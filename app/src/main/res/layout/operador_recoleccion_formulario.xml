@@ -39,6 +39,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/border_card"
         android:orientation="vertical"
@@ -50,7 +52,7 @@
 
         <TextView
             android:id="@+id/txtFormatoRegistro"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
             android:text="¿Recibió formato de registro del donante?"
@@ -63,27 +65,34 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/boton_si_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/manroperegular"
-                android:text="Si"
-                android:textColor="@color/black"
-                android:textColorHint="#333333"
-                android:textSize="16sp"
-                app:layout_alignSelf="center" />
+            <RadioGroup
+                android:id="@+id/radio_Formato"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/boton_no_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/manroperegular"
-                android:text="No"
-                android:textColor="@color/black"
-                android:textColorHint="#333333"
-                android:textSize="16sp"
-                app:layout_alignSelf="center" />
+                <RadioButton
+                    android:id="@+id/rdSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/manroperegular"
+                    android:text="Si"
+                    android:textColor="@color/black"
+                    android:textColorHint="#333333"
+                    android:textSize="16sp"
+                    app:layout_alignSelf="center" />
+
+                <RadioButton
+                    android:id="@+id/rdNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/manroperegular"
+                    android:text="No"
+                    android:textColor="@color/black"
+                    android:textColorHint="#333333"
+                    android:textSize="16sp"
+                    app:layout_alignSelf="center" />
+            </RadioGroup>
 
         </LinearLayout>
 
@@ -133,7 +142,7 @@
 
         <TextView
             android:id="@+id/txtCategorias"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/bebasneue"
@@ -233,7 +242,7 @@
 
         <Button
             android:id="@+id/boton_continuar_nota"
-            android:layout_width="307dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
             android:gravity="center|center_horizontal"
