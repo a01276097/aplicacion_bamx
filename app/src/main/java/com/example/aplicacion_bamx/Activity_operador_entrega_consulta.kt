@@ -19,7 +19,7 @@ class Activity_operador_entrega_consulta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.operador_entrega_consulta)
 
-        val emptystateEntrega = findViewById<LinearLayout>(R.id.layout_empystate_receptor)
+        val emptystateEntrega = findViewById<LinearLayout>(R.id.layout_emptystate)
 
 
         val myTimeZone = TimeZone.getTimeZone("America/Mexico_City")

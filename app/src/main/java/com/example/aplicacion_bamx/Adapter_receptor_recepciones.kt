@@ -29,7 +29,6 @@ class Adapter_receptor_recepciones(val context: Context, val layout: Int, val da
 
 
         //Cargar datos del data source en el elemento cargado
-
         val operador_nombre  = view.findViewById(R.id.operador_nombre_textview) as TextView
         val operador_usuario = view.findViewById(R.id.operador_usuario) as TextView
         val operador_unidad  = view.findViewById(R.id.operador_unidad) as TextView

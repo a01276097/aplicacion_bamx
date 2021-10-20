@@ -54,7 +54,7 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
         val btnGuardar = findViewById<Button>(R.id.boton_continuar_nota)
 
         btnGuardar.setOnClickListener{
-            insertUser(idDonor, nombreDonador!!, idCollection)
+            updateRecoleccion(idDonor, nombreDonador!!, idCollection)
         }
 
     }
@@ -65,7 +65,7 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
     }
 
 
-    fun insertUser(idDonor : Int, nombreDonador: String, idCollection : Int){
+    fun updateRecoleccion(idDonor : Int, nombreDonador: String, idCollection : Int){
 
         var nota : String = ""
         val hasNota = findViewById<RadioGroup>(R.id.radio_Formato)

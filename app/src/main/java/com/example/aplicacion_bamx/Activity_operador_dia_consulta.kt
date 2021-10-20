@@ -10,7 +10,6 @@ import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.example.aplicacion_bamx.model.Dia
 import com.example.aplicacion_bamx.model.Recoleccion
 import org.json.JSONException
 import java.text.SimpleDateFormat
@@ -30,7 +29,7 @@ class Activity_operador_dia_consulta : AppCompatActivity() {
         val txtFecha = findViewById<TextView>(R.id.txtFechaNota)
         txtFecha.text=currentDateAndTime
 
-        val emptystate = findViewById<LinearLayout>(R.id.layout_empystate_hechas)
+        val emptystate = findViewById<LinearLayout>(R.id.layout_emptystate_hechas)
 
 
         val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/done/driver?thisDriver=2"

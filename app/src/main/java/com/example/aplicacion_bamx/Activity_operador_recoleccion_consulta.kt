@@ -32,7 +32,7 @@ class Activity_operador_recoleccion_consulta : AppCompatActivity() {
         val txtFecha = findViewById<TextView>(R.id.txtFechaNota)
         txtFecha.text=currentDateAndTime
 
-        val emptystate = findViewById<LinearLayout>(R.id.layout_empystate_receptor)
+        val emptystate = findViewById<LinearLayout>(R.id.layout_emptystate)
 
 
         val url = "http://Bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/driver?thisDriver=77"

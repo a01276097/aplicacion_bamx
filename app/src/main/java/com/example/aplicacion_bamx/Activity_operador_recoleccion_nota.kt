@@ -61,7 +61,7 @@ class Activity_operador_recoleccion_nota : AppCompatActivity() {
                     val responsable = data.getString("responsableEntrega")
                     val donador = data.getString("nombre")
                     val pan = data.getString("cantidad")
-//                    val nota = data.getInt("nota")
+                    val nota = data.getInt("nota")
                     val abarroteObj = res.getJSONObject(1)
                     val abarrote = abarroteObj.getString("cantidad")
                     val frutaVerduraObj = res.getJSONObject(2)
@@ -69,7 +69,7 @@ class Activity_operador_recoleccion_nota : AppCompatActivity() {
                     val noComestibleObj = res.getJSONObject(3)
                     val noComestible = noComestibleObj.getString("cantidad")
 
-//                    val tNota = findViewById<TextView>(R.id.linea_2)
+                    val tNota = findViewById<TextView>(R.id.linea_2)
                     val tFolio = findViewById<TextView>(R.id.txtFolioNota)
                     val tFechaRecoleccion = findViewById<TextView>(R.id.txtFechaNota)
                     val tResponsable = findViewById<TextView>(R.id.txtResponsableNota)
@@ -79,9 +79,9 @@ class Activity_operador_recoleccion_nota : AppCompatActivity() {
                     val tAbarrote = findViewById<TextView>(R.id.txtAbarroteNota)
                     val tNoComestible = findViewById<TextView>(R.id.txtNoComestibleNota)
 
-//                    if (nota==1){
-//                        tNota.setText("Recibió nota del establecimiento donador")
-//                    }
+                    if (nota==1){
+                        tNota.setText("Recibió nota del establecimiento donador")
+                    }
                     tFolio.setText(tFolio.text.toString()  + " $folio")
                     tFechaRecoleccion.setText(fechaRecoleccion)
                     tResponsable.setText(tResponsable.text.toString()  + " $responsable en")
