@@ -45,7 +45,8 @@ class   Fragment_operador_recoleccion_consulta: Fragment() {
         val txtFecha = view.findViewById<TextView>(R.id.txtFechaNota)
         txtFecha.text=currentDateAndTime
 
-        val emptystate = view.findViewById<LinearLayout>(R.id.layout_empystate_receptor)
+        val emptystate = view.findViewById<LinearLayout>(R.id.layout_emptystate)
+        val err = view.findViewById<LinearLayout>(R.id.layout_error)
         val loader = view.findViewById<ProgressBar>(R.id.cargaRecoleccionConsulta)
 
 
@@ -63,6 +64,8 @@ class   Fragment_operador_recoleccion_consulta: Fragment() {
                     if(jsonArray.isNull(0)){
                         emptystate.visibility=View.VISIBLE
                         loader.visibility = View.GONE
+                        err.visibility = View.GONE
+                        lstRecolecciones.visibility = View.VISIBLE
                     }
                     else {
                         for (i in 0 until jsonArray.length()) {
@@ -105,11 +108,17 @@ class   Fragment_operador_recoleccion_consulta: Fragment() {
                                 startActivity(intent)
                             }
                         }
+                        loader.visibility = View.GONE
                         lstRecolecciones.visibility = View.VISIBLE
+                        err.visibility = View.GONE
+                        emptystate.visibility = View.GONE
                     }
                 } catch (e: JSONException) {
                     e.printStackTrace()
-
+                    err.visibility = View.VISIBLE
+                    loader.visibility = View.GONE
+                    lstRecolecciones.visibility = View.GONE
+                    emptystate.visibility = View.GONE
                 }
             })
         { error -> error.printStackTrace() }

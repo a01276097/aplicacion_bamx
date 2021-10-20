@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/orange_gradient_bg"
-    android:padding="50dp">
+    android:orientation="vertical"
+    android:padding="30dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal|center_vertical"
         android:orientation="vertical">
 
         <LinearLayout
@@ -33,10 +33,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:layout_marginTop="45dp">
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,19 +45,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
                     android:fontFamily="@font/bebasneue"
                     android:text="@string/fruta_verdura"
                     android:textColor="@color/black"
                     android:textSize="24sp" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <EditText
                         android:id="@+id/campo_fruta_verdura"
-                        android:layout_width="220dp"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/manroperegular"
                         android:hint="@string/cero"
@@ -84,19 +84,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
                     android:fontFamily="@font/bebasneue"
                     android:text="@string/pan"
                     android:textColor="@color/black"
                     android:textSize="24sp" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <EditText
                         android:id="@+id/campo_pan"
-                        android:layout_width="220dp"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/manroperegular"
                         android:hint="@string/cero"
@@ -116,102 +118,116 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/bebasneue"
                     android:text="@string/abarrote"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/bebasneue"
-                    android:textSize="24sp"/>
+                    android:textSize="24sp" />
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:orientation="horizontal">
+
                     <EditText
                         android:id="@+id/campo_abarrote"
-                        android:layout_width="220dp"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/manroperegular"
                         android:hint="@string/cero"
-                        android:inputType="number"/>
+                        android:inputType="number" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/bebasneue"
                         android:text="@string/kg"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/bebasneue"
-                        android:textSize="24sp"/>
+                        android:textSize="24sp" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/bebasneue"
                     android:text="@string/no_comestible"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/bebasneue"
-                    android:textSize="24sp"/>
+                    android:textSize="24sp" />
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:orientation="horizontal">
+
                     <EditText
                         android:id="@+id/campo_no_comestible"
-                        android:layout_width="220dp"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/manroperegular"
                         android:hint="@string/cero"
-                        android:inputType="number"/>
+                        android:inputType="number" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/bebasneue"
                         android:text="@string/kg"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/bebasneue"
-                        android:textSize="24sp"/>
+                        android:textSize="24sp" />
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
         android:gravity="center"
-        android:layout_marginTop="30dp">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/boton_confirmar"
+            style="?buttonBarButtonStyle"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="@string/confirmar"
-            app:layout_alignSelf="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:backgroundTint="#CCFFE0"
             android:fontFamily="@font/bebasneue"
+            android:text="@string/confirmar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/black"
             android:textSize="30sp"
             app:cornerRadius="25dp"
-            android:backgroundTint="#CCFFE0"
-            style="?buttonBarButtonStyle"/>
+            app:layout_alignSelf="center" />
+
         <Button
             android:id="@+id/boton_cancelar"
+            style="?buttonBarButtonStyle"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="@string/cancelar"
-            app:layout_alignSelf="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#FBD0D7"
             android:fontFamily="@font/bebasneue"
+            android:text="@string/cancelar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/black"
             android:textSize="30sp"
             app:cornerRadius="25dp"
-            android:backgroundTint="#FBD0D7"
-            android:layout_marginStart="10dp"
-            style="?buttonBarButtonStyle"/>
+            app:layout_alignSelf="center" />
     </LinearLayout>
 </LinearLayout>

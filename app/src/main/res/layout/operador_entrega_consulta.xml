@@ -83,11 +83,42 @@
                     android:textSize="34sp"
                     app:layout_alignSelf="center" />
 
+                <ProgressBar
+                    android:id="@+id/cargaEntrega"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
                 <LinearLayout
-                    android:id="@+id/layout_empystate_receptor"
+                    android:id="@+id/layout_error"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="322dp"
+                        app:srcCompat="@drawable/err_avocado" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manroperegular"
+                        android:gravity="center_horizontal"
+                        android:text="@string/str_layoutError"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_emptystate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:visibility="gone">
 
                     <ImageView
                         android:id="@+id/imageView2"

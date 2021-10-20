@@ -77,12 +77,11 @@ class Activity_operador_menu_lateral : AppCompatActivity() {
                 }
                 R.id.boton_cerrar_sesion -> {
                     with(sharedPreferences.edit()){
-                        remove("usuario")
-                        remove("id_usuario")
+                        remove("cargo")
                         commit()
                     }
-                    //val intent_login = Intent(this@Activity_operador_menu_lateral, Activity_general_login::class.java)
-                    finish()
+                    val intent_login = Intent(this@Activity_operador_menu_lateral, Activity_general_login::class.java)
+                    startActivity(intent_login)
                     true
                 }
                 else -> false

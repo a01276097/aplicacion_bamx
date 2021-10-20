@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.ListView
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.android.volley.Request
@@ -33,8 +34,9 @@ class Fragment_operador_entrega_consulta: Fragment() {
         sharedPreferences = this.requireActivity().getSharedPreferences("login", Context.MODE_PRIVATE)
         val idUser = sharedPreferences.getString("id_usuario","-1")
 
-        val emptystateEntrega = view.findViewById<LinearLayout>(R.id.layout_empystate_receptor)
-
+        val emptystateEntrega = view.findViewById<LinearLayout>(R.id.layout_emptystate)
+        val err = view.findViewById<LinearLayout>(R.id.layout_error)
+        val loader = view.findViewById<ProgressBar>(R.id.cargaEntrega)
 
         val myTimeZone = TimeZone.getTimeZone("America/Mexico_City")
         val local = Locale("es","MX")
@@ -54,32 +56,52 @@ class Fragment_operador_entrega_consulta: Fragment() {
             Request.Method.GET, url, null,
             { response ->
                 try {
-                    lstEntregas.visibility = View.VISIBLE
-                    emptystateEntrega.visibility= View.GONE
                     val jsonArray = response.getJSONArray("data")
-                    for (i in 0 until jsonArray.length()) {
-                        val jsonObject = jsonArray.getJSONObject(i)
+                    if(jsonArray.isNull(0)){
+                        emptystateEntrega.visibility=View.VISIBLE
+                        loader.visibility = View.GONE
+                        err.visibility = View.GONE
+                        lstEntregas.visibility = View.GONE
+                    }
+                    else {
+                        for (i in 0 until jsonArray.length()) {
+                            val jsonObject = jsonArray.getJSONObject(i)
 
-                        val nombreBodega = jsonObject.getString("bodega")
-                        val callen = jsonObject.getString("calle")
-                        val numExterior = jsonObject.getString("numExterior")
-                        val colonia= jsonObject.getString("colonia")
-                        val municipio = jsonObject.getString("municipio")
-                        val cp = jsonObject.getString("cp")
-                        val pan = jsonObject.getInt("pan")
-                        val fruta = jsonObject.getInt("fruta")
-                        val abarrote = jsonObject.getInt("abarrote")
-                        val noComestible = jsonObject.getInt("noComestible")
-                        val direccion = callen + ", " + numExterior + ", " + colonia + ", " + municipio + ", " + cp
-                        entregas.add(i, Entrega(nombreBodega, direccion,pan, fruta, abarrote, noComestible ))
-                        Log.e("Hola", entregas.toString())
-                        val adaptador = Adapter_operador_entregas(requireActivity(), R.layout.operador_card_consulta_entrega, entregas)
-                        lstEntregas.adapter = adaptador
-
+                            val nombreBodega = jsonObject.getString("bodega")
+                            val callen = jsonObject.getString("calle")
+                            val numExterior = jsonObject.getString("numExterior")
+                            val colonia = jsonObject.getString("colonia")
+                            val municipio = jsonObject.getString("municipio")
+                            val cp = jsonObject.getString("cp")
+                            val pan = jsonObject.getInt("pan")
+                            val fruta = jsonObject.getInt("fruta")
+                            val abarrote = jsonObject.getInt("abarrote")
+                            val noComestible = jsonObject.getInt("noComestible")
+                            val direccion =
+                                callen + ", " + numExterior + ", " + colonia + ", " + municipio + ", " + cp
+                            entregas.add(
+                                i,
+                                Entrega(nombreBodega, direccion,  fruta, pan, abarrote, noComestible)
+                            )
+                            Log.e("Hola", entregas.toString())
+                            val adaptador = Adapter_operador_entregas(
+                                requireActivity(),
+                                R.layout.operador_card_consulta_entrega,
+                                entregas
+                            )
+                            lstEntregas.adapter = adaptador
+                        }
+                        lstEntregas.visibility = View.VISIBLE
+                        loader.visibility= View.GONE
+                        err.visibility = View.GONE
+                        emptystateEntrega.visibility = View.GONE
                     }
                 } catch (e: JSONException) {
                     e.printStackTrace()
-
+                    err.visibility = View.VISIBLE
+                    lstEntregas.visibility = View.GONE
+                    loader.visibility= View.GONE
+                    emptystateEntrega.visibility = View.GONE
                 }
             })
         { error -> error.printStackTrace() }

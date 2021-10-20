@@ -11,7 +11,6 @@ import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.example.aplicacion_bamx.model.Entrega
 import com.example.aplicacion_bamx.model.Recepcion
 import org.json.JSONException
 import java.text.SimpleDateFormat
@@ -22,7 +21,7 @@ class Activity_receptor_recepcion_consulta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.receptor_recepcion_consulta)
 
-        val emptystateRecepcion = findViewById<LinearLayout>(R.id.layout_empystate_receptor)
+        val emptystateRecepcion = findViewById<LinearLayout>(R.id.layout_emptystate)
 
         val myTimeZone = TimeZone.getTimeZone("America/Mexico_City")
         val local = Locale("es","MX")
@@ -48,6 +47,7 @@ class Activity_receptor_recepcion_consulta : AppCompatActivity() {
                     Log.e("Hola", jsonArray.toString())
                     for (i in 0 until jsonArray.length()) {
                         val jsonObject = jsonArray.getJSONObject(i)
+                        val idAsignacion = jsonObject.getInt("idWarehousesAssignation")
                         val nombre = jsonObject.getString("operador")
                         val apellidoP = jsonObject.getString("apellidoP")
                         val apellidoM = jsonObject.getString("apellidoM")
@@ -58,7 +58,7 @@ class Activity_receptor_recepcion_consulta : AppCompatActivity() {
                         val abarrote = jsonObject.getInt("abarrote")
                         val noComestible = jsonObject.getInt("noComestible")
                         val nombreOperador = "$nombre $apellidoP $apellidoM"
-                        recepciones.add(i, Recepcion(nombreOperador, nombreUsuario, modeloUnidad ,pan, fruta, abarrote, noComestible ))
+                        recepciones.add(i, Recepcion(idAsignacion, nombreOperador, nombreUsuario, modeloUnidad ,pan, fruta, abarrote, noComestible ))
 
                         val adaptador = Adapter_receptor_recepciones(this@Activity_receptor_recepcion_consulta, R.layout.receptor_card_recepcion, recepciones)
                         lstRecepciones.adapter = adaptador
