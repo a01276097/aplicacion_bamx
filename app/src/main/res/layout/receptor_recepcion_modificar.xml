@@ -41,6 +41,80 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebasneue"
+                    android:text="@string/fruta_verdura"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/campo_fruta_verdura"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manroperegular"
+                        android:hint="@string/cero"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bebasneue"
+                        android:text="@string/kg"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebasneue"
+                    android:text="@string/pan"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/campo_pan"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manroperegular"
+                        android:hint="@string/cero"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bebasneue"
+                        android:text="@string/kg"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="wrap_content"
@@ -55,72 +129,6 @@
                     android:orientation="horizontal">
                     <EditText
                         android:id="@+id/campo_abarrote"
-                        android:layout_width="220dp"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/manroperegular"
-                        android:hint="@string/cero"
-                        android:inputType="number"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/kg"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/bebasneue"
-                        android:textSize="24sp"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fruta_verdura"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/bebasneue"
-                    android:textSize="24sp"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <EditText
-                        android:id="@+id/campo_fruta_verdura"
-                        android:layout_width="220dp"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/manroperegular"
-                        android:hint="@string/cero"
-                        android:inputType="number"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/kg"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/bebasneue"
-                        android:textSize="24sp"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pan"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/bebasneue"
-                    android:textSize="24sp"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <EditText
-                        android:id="@+id/campo_pan"
                         android:layout_width="220dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/manroperegular"

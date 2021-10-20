@@ -31,7 +31,7 @@ class Activity_operador_entrega_consulta : AppCompatActivity() {
         val txtFecha = findViewById<TextView>(R.id.txtFechaEntrega)
         txtFecha.text=currentDateAndTime
 
-        val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/drivers/assignedWarehouses/:idDriver"
+        val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/drivers/assignedWarehouses/2"
         val lstEntregas = findViewById<ListView>(R.id.lista_entrega)
         val entregas = mutableListOf<Entrega>()
         val requestQueue = Volley.newRequestQueue(this)
@@ -42,21 +42,20 @@ class Activity_operador_entrega_consulta : AppCompatActivity() {
                 try {
                     lstEntregas.visibility = View.VISIBLE
                     emptystateEntrega.visibility= View.GONE
-                    val jsonArray = response.getJSONArray("listaEntregas")
+                    val jsonArray = response.getJSONArray("data")
                     for (i in 0 until jsonArray.length()) {
                         val jsonObject = jsonArray.getJSONObject(i)
-                        val nombreBodega = jsonObject.getString("nombre")
+                        val nombreBodega = jsonObject.getString("bodega")
                         val callen = jsonObject.getString("calle")
                         val numExterior = jsonObject.getString("numExterior")
                         val colonia= jsonObject.getString("colonia")
                         val municipio = jsonObject.getString("municipio")
                         val cp = jsonObject.getString("cp")
-                        val estado = jsonObject.getString("estado")
                         val pan = jsonObject.getInt("pan")
                         val fruta = jsonObject.getInt("fruta")
                         val abarrote = jsonObject.getInt("abarrote")
-                        val noComestible = jsonObject.getInt("nocomestible")
-                        val direccion = callen + ", " + numExterior + ", " + colonia + ", " + municipio + ", " + estado + ", " + cp
+                        val noComestible = jsonObject.getInt("noComestible")
+                        val direccion = callen + ", " + numExterior + ", " + colonia + ", " + municipio + ", " + cp
                         entregas.add(i, Entrega(nombreBodega, direccion,pan, fruta, abarrote, noComestible ))
 
                         val adaptador = Adapter_operador_entregas(this@Activity_operador_entrega_consulta, R.layout.operador_card_consulta_entrega, entregas)

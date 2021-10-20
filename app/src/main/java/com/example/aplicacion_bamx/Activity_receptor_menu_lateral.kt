@@ -24,9 +24,9 @@ class Activity_receptor_menu_lateral : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences("login",
             Context.MODE_PRIVATE)
 
-        // Fragment inicial del operador
+        // Fragment inicial del receptor
         val ft = fragmentManager.beginTransaction()
-        ft.replace(R.id.contenedor, Fragment_operador_recoleccion_consulta())
+        ft.replace(R.id.contenedor, Fragment_receptor_recepcion_consulta())
         ft.commit()
         drawer_layout.closeDrawer(GravityCompat.START)
 

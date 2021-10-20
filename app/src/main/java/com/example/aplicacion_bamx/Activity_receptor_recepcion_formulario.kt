@@ -1,13 +1,20 @@
 package com.example.aplicacion_bamx
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 
 class Activity_receptor_recepcion_formulario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.receptor_recepcion_formulario)
+
+
+        val btnModificar = findViewById<Button>(R.id.boton_modificar_form)
+        val btnConfirmar = findViewById<Button>(R.id.boton_confirmar_form)
+
 
         val nombreOperador = intent.getStringExtra("nombre")
         val unidad = intent.getStringExtra("unidad")
@@ -28,15 +35,22 @@ class Activity_receptor_recepcion_formulario : AppCompatActivity() {
 
 
         tNombreOperador.setText(nombreOperador)
-        tUnidad.setText(unidad)
-        tUsuarioOperador.setText(usuarioOperador)
+        tUnidad.setText("Unidad: ${unidad}")
+        tUsuarioOperador.setText("Operador: $usuarioOperador")
 
-        tPan.setText(tPan.text.toString() + " ${cantPan}")
-        tFrutaVerdura.setText(tFrutaVerdura.text.toString() + " ${cantFrutaVerdura}")
-        tNoComestible.setText(tNoComestible.text.toString() + " ${cantNoComestible}")
-        tAbarrote.setText(tAbarrote.text.toString() + " ${cantAbarrote}")
+        tPan.setText(tPan.text.toString() + " ${cantPan} kg")
+        tFrutaVerdura.setText(tFrutaVerdura.text.toString() + " ${cantFrutaVerdura} kg")
+        tNoComestible.setText(tNoComestible.text.toString() + " ${cantNoComestible} kg")
+        tAbarrote.setText(tAbarrote.text.toString() + " ${cantAbarrote} kg")
 
-
+        btnModificar.setOnClickListener {
+            val intent = Intent(this@Activity_receptor_recepcion_formulario, Activity_receptor_recepcion_modificar:: class.java)
+            intent.putExtra("pan", cantPan)
+            intent.putExtra("abarrote", cantAbarrote)
+            intent.putExtra("fruta", cantFrutaVerdura)
+            intent.putExtra("noComestible", cantNoComestible)
+            startActivity(intent)
+        }
 
 
     }

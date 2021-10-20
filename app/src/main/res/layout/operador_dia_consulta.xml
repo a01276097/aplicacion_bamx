@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebasneue"
-            android:text="@string/bienbenida_usuario"
+            android:text="@string/bienvenida_usuario"
             android:textColor="@color/black"
             android:textSize="34sp"
             app:layout_alignSelf="center" />

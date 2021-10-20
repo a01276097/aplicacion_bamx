@@ -21,6 +21,8 @@ class Activity_operador_recoleccion_consulta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.operador_recoleccion_consulta)
 
+
+
         val myTimeZone = TimeZone.getTimeZone("America/Mexico_City")
         val local = Locale("es","MX")
         val simpleDateFormat = SimpleDateFormat("EEEE dd 'de' MMMM", local)
@@ -33,7 +35,7 @@ class Activity_operador_recoleccion_consulta : AppCompatActivity() {
         val emptystate = findViewById<LinearLayout>(R.id.layout_empystate_receptor)
 
 
-        val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/driver?thisDriver=2"
+        val url = "http://Bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/driver?thisDriver=77"
         val lstRecolecciones = findViewById<ListView>(R.id.lista_recepciones)
         val recolecciones = mutableListOf<Recoleccion>()
         val requestQueue = Volley.newRequestQueue(this)
