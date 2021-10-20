@@ -33,7 +33,7 @@ class Activity_receptor_recepcion_consulta : AppCompatActivity() {
         val txtFecha = findViewById<TextView>(R.id.txtFechaRecepcion)
         txtFecha.text=currentDateAndTime
 
-        val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/assigneddeliveries/1"
+        val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/assigneddeliveries/14"
         val lstRecepciones = /*view.*/findViewById<ListView>(R.id.lista_recepciones)
         val recepciones = mutableListOf<Recepcion>()
         val requestQueue = Volley.newRequestQueue(this)

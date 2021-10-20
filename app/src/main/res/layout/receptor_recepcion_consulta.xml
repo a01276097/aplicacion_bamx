@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bebasneue"
-                android:text="@string/bienbenida_usuario"
+                android:text="@string/bienvenida_usuario"
                 android:textColor="@color/black"
                 android:textSize="34sp"
                 app:layout_alignSelf="center" />
@@ -60,6 +60,8 @@
                 android:id="@+id/txtFechaRecepcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/manropebold"
+                android:textSize="16sp"
                 app:layout_alignSelf="center" />
 
             <LinearLayout

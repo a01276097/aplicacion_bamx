@@ -2,8 +2,8 @@
     <!--    general    -->
     <string name="app_name">App BAMX</string>
     <string name="morelos">Morelos</string>
-    <string name="bienbenida">Bienbenido/a</string>
-    <string name="bienbenida_usuario">Bienbenido/a, </string>
+    <string name="bienvenida">App BAMX</string>
+    <string name="bienvenida_usuario">Bienvenido/a, </string>
     <string name="fruta_verdura">Fruta y verdura:</string>
     <string name="pan">Pan:</string>
     <string name="abarrote">Abarrote:</string>
@@ -65,8 +65,8 @@
     <string name="recibio_operadro_nota_recoleccion">Recibió de </string>
 
     <!--    receptor_card_xxxx    -->
-    <string name="operador_receptor_card">Operador </string>
-    <string name="unidad_receptor_card">Unidad </string>
+    <string name="operador_receptor_card">Operador: </string>
+    <string name="unidad_receptor_card">Unidad: </string>
 
     <!--    receptor_recepcion_consulta    -->
     <string name="tipo_receptor_recepcion_consulta">Operadores en ruta de entrega</string>

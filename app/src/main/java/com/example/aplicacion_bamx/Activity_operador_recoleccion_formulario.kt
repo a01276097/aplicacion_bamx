@@ -149,9 +149,8 @@ class Activity_operador_recoleccion_formulario : AppCompatActivity(), LocationLi
                         Log.e("VOLLEYRESPONSE", response.toString())
                         val notaConfirmacion = Intent(this@Activity_operador_recoleccion_formulario, Activity_operador_recoleccion_nota::class.java)
                         notaConfirmacion.putExtra("idRecoleccion", idCollection)
-                        intent.putExtra("previa", "formulario")
+                        notaConfirmacion.putExtra("previa", "formulario")
                         startActivity(notaConfirmacion)
-
                     },
                     {error->
                         Log.e("VOLLEYRESPONSE", error.message!!)

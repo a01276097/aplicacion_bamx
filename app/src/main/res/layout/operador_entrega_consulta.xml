@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/red_gradient_bg"
+    android:backgroundTint="#00FFFFFF"
     android:orientation="vertical">
 
     <LinearLayout
@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bebasneue"
-                android:text="@string/bienbenida_usuario"
+                android:text="@string/bienvenida_usuario"
                 android:textColor="@color/black"
                 android:textSize="34sp"
                 app:layout_alignSelf="center" />

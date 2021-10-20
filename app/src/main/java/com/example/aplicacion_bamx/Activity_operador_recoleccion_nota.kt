@@ -40,7 +40,7 @@ class Activity_operador_recoleccion_nota : AppCompatActivity() {
                     this@Activity_operador_recoleccion_nota,
                     Activity_operador_menu_lateral::class.java
                 )
-                intent.putExtra("pantalla", 1)
+                pantallaPrincipal.putExtra("pantalla", 1)
                 startActivity(pantallaPrincipal)
             }
         }

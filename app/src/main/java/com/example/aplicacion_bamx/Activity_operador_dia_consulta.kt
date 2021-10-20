@@ -33,7 +33,7 @@ class Activity_operador_dia_consulta : AppCompatActivity() {
         val emptystate = findViewById<LinearLayout>(R.id.layout_empystate_hechas)
 
 
-        val url = "http://www.bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/done/driver?thisDriver=2"
+        val url = "http://bamxapi-env.eba-wsth22h3.us-east-1.elasticbeanstalk.com/collections/done/driver?thisDriver=2"
         val lstRecoleccionesHechas = findViewById<ListView>(R.id.lista_recolecciones_hechas)
         val recoleccionesHechas = mutableListOf<Recoleccion>()
         val requestQueue = Volley.newRequestQueue(this)

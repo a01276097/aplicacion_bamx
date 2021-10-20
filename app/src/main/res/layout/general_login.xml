@@ -7,18 +7,22 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tomapple_2x" />
+
     <TextView
         android:id="@+id/bienvenida"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-20dp"
         android:fontFamily="@font/bebasneue"
         android:gravity="top"
-        android:paddingBottom="120dp"
-        android:text="@string/bienbenida"
+        android:text="@string/bienvenida"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="48sp" />
+        android:textSize="60sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,41 +41,43 @@
             android:text="@string/inicia_sesion_indicacion"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="34sp" />
 
         <EditText
             android:id="@+id/entrada_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:fontFamily="@font/manrope"
-            android:inputType="textEmailAddress"
+            android:fontFamily="@font/manroperegular"
             android:hint="@string/usuario"
+            android:inputType="textEmailAddress"
             android:textColor="@color/white"
-            app:layout_alignSelf="center"/>
+            app:layout_alignSelf="center" />
 
         <EditText
             android:id="@+id/entrada_contraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
-            android:fontFamily="@font/manrope"
-            android:inputType="textPassword"
+            android:fontFamily="@font/manroperegular"
             android:hint="@string/contraseña"
+            android:inputType="textPassword"
             android:textColor="@color/white"
-            app:layout_alignSelf="center"/>
+            app:layout_alignSelf="center" />
 
         <Button
             android:id="@+id/iniciar_sesion"
-            android:layout_width="261dp"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#009439"
+            android:backgroundTint="@color/verde"
             android:fontFamily="@font/bebasneue"
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:text="@string/iniciar_sesion"
-            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="34sp"
             app:cornerRadius="25dp" />
 
     </LinearLayout>
