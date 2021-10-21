@@ -1,6 +1,7 @@
 package com.example.aplicacion_bamx
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -48,8 +49,8 @@ class Activity_receptor_menu_lateral : AppCompatActivity() {
                         remove("cargo")
                         commit()
                     }
-                    //val intent_login = Intent(this@Activity_operador_menu_lateral, Activity_general_login::class.java)
-                    finish()
+                    val intent_login = Intent(this@Activity_receptor_menu_lateral, Activity_general_login::class.java)
+                    startActivity(intent_login)
                     true
                 }
                 else -> false

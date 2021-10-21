@@ -1,6 +1,6 @@
 <resources>
     <!--    general    -->
-    <string name="app_name">App BAMX</string>
+    <string name="app_name">BAMX Morelos</string>
     <string name="morelos">Morelos</string>
     <string name="bienvenida">App BAMX</string>
     <string name="bienvenida_usuario">Bienvenido/a, </string>

@@ -54,6 +54,9 @@ class Fragment_receptor_recepcion_consulta: Fragment() {
         val recepciones = mutableListOf<Recepcion>()
         val requestQueue = Volley.newRequestQueue(requireContext())
 
+        lstRecepciones.visibility = View.GONE
+        emptystateRecepcion.visibility= View.GONE
+
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET, url, null,
             { response ->
